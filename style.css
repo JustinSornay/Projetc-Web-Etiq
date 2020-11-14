@@ -1,23 +1,24 @@
 
 body{
-    background-image: url(images/OIP.jpg);
+    background-color: #FFFEF4;
     background-repeat: no-repeat;
     background-size: cover;
 }
 header{
-    border: 1px solid black;
+    border: 1px solid #1F2124;
     background-color: cornflowerblue;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
 }
 h1{
-    color: blue;
+    color: #F17F42;
     font-style: oblique;
     font-size: 2em;
     text-align: center;
 }
 h2{
+    color: #F68657;
     margin: 20px;
 }  
 nav{
