@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_personnage.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div clas='formulaire'>
+    <form action="register" class='formulaire'>
+        
+        <p>
+            <label for='Nom'> Nom : </label>
+            <input type='text' id='form' required>
+            <label for="prénom">Prénom :</label>
+            <input type='text' id='form' required>
+        </p>
+
+        <p>
+            <label for='mail'>Email :</label>
+            <input type='email' id='form' required>
+        </p>
+
+        <p>
+            <laber for='mdp'>mot de passe :</laber>
+            <input type='password' size="10" maxlength="20" required>
+
+        </p>
+
+        <p>
+            <label for='membre'>Membre de l'association ETIQ ?</label>
+            <input type='radio' name='membreETIQ' value='Oui'/>Oui
+            <input type='radio' name='membreETIQ' value='Non'/>Non 
+        </p>
+    
+        <p>Années d'études :
+            <Select name='Année' size='1' id='form'>
+            <option>1ère Année</option>
+            <option>2ème Année</option>
+            <option>3ème Année</option>
+            </Select>
+        
+        </p>  
+
+        <p>
+            <label for='Confirmer' id='Confirmer'></label>
+            <input type='submit' value='Confirmer' id='Confirmer' >
+        </p>
+
+    </form>
+    </div>
+</body>
+</html>
