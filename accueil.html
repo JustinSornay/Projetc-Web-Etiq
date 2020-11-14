@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_accueil.css" />
+    <link rel="stylesheet" href="style_accueil.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <title>Site web de l'ETIQ</title>
     <script language="javascript">
         imgPath = new Array;
@@ -13,7 +14,7 @@
         if (version >= 3)
             {
             i0 = new Image;
-            i0.src = 'https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-0/c0.83.526.275a/p526x296/107738073_1780709122053467_5355117668635489162_o.jpg?_nc_cat=106&ccb=2&_nc_sid=340051&_nc_ohc=JSoQ_TzJpdgAX9eoTL5&_nc_ht=scontent-frt3-1.xx&tp=27&oh=6d8e71c067265866f261e7f4fbee3512&oe=5FC1AB72'  ;
+            i0.src = 'https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-0/c0.83.526.275a/p526x296/107738073_1780709122053467_5355117668635489162_o.jpg?_nc_cat=106&ccb=2&_nc_sid=340051&_nc_ohc=JSoQ_TzJpdgAX9eoTL5&_nc_ht=scontent-frt3-1.xx&tp=27&oh=6d8e71c067265866f261e7f4fbee3512&oe=5FC1AB72';
             SiClickGoTo[0] = "https://www.facebook.com/events/1408499879347369/";
             imgPath[0] = i0.src;
             i1 = new Image;
@@ -62,14 +63,13 @@
 <body>
     <header>
         <p class='compte'><a href='personnage.html'><img src='images/personnage.png' class='personnage'></a></p>
-        <h1>Bienvenu sur le site de l'ETIQ</h1>
-      
+        <h1>Bienvenue sur le site de l'ETIQ</h1>
 
         <nav>
             <ul>
                 <li class="deroulante"><a href="accueil.html">Accueil</a>
                     <ul class="sous">
-                        <li><a href="accueil.html" type="nav" alt="accueil"> Accueil    </a></li>
+                        <li><a href="accueil.html" type="nav" alt="accueil"> Accueil</a></li>
                         <li><a href="contact.html" type="nav" alt="Nous contacter">Nous contacter</a></li>
                         <li><a href="forum.html" type="nav" alt="Forum"> Forum</a></li>
                     </ul>
@@ -83,7 +83,7 @@
                 <li><a href="Avantages.html">Avantages</a></li>
                 <li><a href="évenement.html">évenement</a></li>
             </ul>
-        </nav><br><br><br><br>
+        </nav>
     </header>
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
     <div class="script1"> <script language="javascript">
@@ -91,30 +91,31 @@
         </script>
     </div> 
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-    <br>
-    <div class='Evenement'>
-        <h3>Evenement</h3>
-        <ul>
-            <li>Quizz manga disponible sur le <a href="https://www.facebook.com/events/1408499879347369/" class="actualité">facebook</a> de l'ETIQ. Article publié le 9 juillet 2020.</li>
-            <li>Nouvelle vidéo disponible sur <a href="https://www.youtube.com/watch?v=qBWjHo-Krdc&feature=share&fbclid=IwAR0qYf65WIiA8bqTUjavO81upVOpzC7tCBkbdX6u55LHFPJ8XDnAM8jx6zI" class="actualité">youtube</a>, la voix du renard épisode 7.</li>
-        </ul>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br>    
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-    <div class='Evenement'>
-        <h3>Avantages</h3>
-        <ul>
-            <li>Adhérer à l'association de l'ETIQ offre de nombreux avanatges pour plus d'information cliquer <a href="Avantages.html" class="actualité">ici</a></li>
-        </ul>
-    </div><br><br><br><br><br><br><br><br><br>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-    <div class='Evenement'>
-        <h3>Forum</h3>
-        <ul>
-            <li>Vous avez des question par rapport à l'association? N'hésiter pas à aller faire un tour sur notre <a href="forum.html" class="actualité">Forum</a>.</li>
-            <li>Vous avez besoin d'aide pour réaliser un travail en particulier? Vous trouverez sûrement de l'aide <a href="forum.html" class="actualité">ici</a>.</li>
-        </ul>
-    </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	<div class='evenement'>
+	    <div class='elementinfo'>
+	        <h3>Evenement</h3>
+	        <ul>
+	            <li>Quizz manga disponible sur le <a href="https://www.facebook.com/events/1408499879347369/" class="actualité">facebook</a> de l'ETIQ. Article publié le 9 juillet 2020.</li><br>
+	            <li>Nouvelle vidéo disponible sur <a href="https://www.youtube.com/watch?v=qBWjHo-Krdc&feature=share&fbclid=IwAR0qYf65WIiA8bqTUjavO81upVOpzC7tCBkbdX6u55LHFPJ8XDnAM8jx6zI" class="actualité">youtube</a>, la voix du renard épisode 7.</li>
+	        </ul>
+	    </div>  
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	    <div class='elementinfo'>
+	        <h3>Avantages</h3>
+	        <ul>
+	            <li>Adhérer à l'association de l'ETIQ offre de nombreux avanatges pour plus d'information cliquer <a href="Avantages.html" class="actualité">ici</a></li>
+	        </ul>
+	    </div>
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+	    <div class='elementinfo'>
+	        <h3>Forum</h3>
+	        <ul>
+	            <li>Vous avez des question par rapport à l'association? N'hésiter pas à aller faire un tour sur notre <a href="forum.html" class="actualité">Forum</a>.</li><br>
+	            <li>Vous avez besoin d'aide pour réaliser un travail en particulier? Vous trouverez sûrement de l'aide <a href="forum.html" class="actualité">ici</a>.</li>
+	        </ul>
+	    </div>
+	</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class='sommaire'><h2>Présentation de l'association de l'ETIQ</h2>
     <ol>
         <li><a href="#I">Qu'est-ce que l'ETIQ</a></li>
