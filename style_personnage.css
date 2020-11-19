@@ -8,6 +8,14 @@ body {
     width:100%;  
     color:black;
 }
+header{
+    border: 1px solid #1F2124;
+    background-color: #1F2124;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 70px;
+}  
 body:before {
     content: "";
     position: fixed;

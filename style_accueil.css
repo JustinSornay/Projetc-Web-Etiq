@@ -1,7 +1,7 @@
 .evenement{
 	position: relative;
     float: right;
-    width: 15%;
+    max-width: 250px;
     color: #FFFEF4;
     top: 15px;
 }
@@ -37,4 +37,11 @@
 h3{
 	text-decoration: underline;
 }
-
+.mainTitle{
+	font-size: 
+	padding: 10px;
+	margin: 25px 20% 25px 20%;
+	background-color: #FFFEF4;
+	color: #1F2124;
+	text-align: center;
+}
