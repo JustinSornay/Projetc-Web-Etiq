@@ -2,33 +2,42 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_accueil.css"/>
     <link rel="stylesheet" href="style.css"/>
     <title>Site web de l'ETIQ</title>
+
     <script language="javascript">
+
         imgPath = new Array;
         SiClickGoTo = new Array;
         version = navigator.appVersion.substring(0,1);
-        if (version >= 3)
-            {
+
+        if (version >= 3) {
             i0 = new Image;
             i0.src = 'https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-0/c0.83.526.275a/p526x296/107738073_1780709122053467_5355117668635489162_o.jpg?_nc_cat=106&ccb=2&_nc_sid=340051&_nc_ohc=JSoQ_TzJpdgAX9eoTL5&_nc_ht=scontent-frt3-1.xx&tp=27&oh=6d8e71c067265866f261e7f4fbee3512&oe=5FC1AB72';
+
             SiClickGoTo[0] = "https://www.facebook.com/events/1408499879347369/";
             imgPath[0] = i0.src;
+
             i1 = new Image;
             i1.src = 'https://external-frt3-2.xx.fbcdn.net/safe_image.php?d=AQDJeTq-ie5jg8XB&w=500&h=261&url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FqBWjHo-Krdc%2Fmaxresdefault.jpg&cfs=1&ext=jpg&_nc_cb=1&_nc_hash=AQD8gIF3wDm-a6sq';
+
             SiClickGoTo[1] = "file:///C:/Users/Luka2/Documents/Cours_S1_IUT/Projet_S1/%C3%A9venement.html";
             imgPath[1] = i1.src;
+
             i2 = new Image;
             i2.src = 'https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-0/c0.83.526.275a/p526x296/94612847_1610476489076732_222594222077771776_n.jpg?_nc_cat=102&ccb=2&_nc_sid=340051&_nc_ohc=ENQtHAPD9YMAX-aIG0I&_nc_ht=scontent-frt3-1.xx&tp=27&oh=0ea59ea460fe486dfc5879ba01871daa&oe=5FC237B4';
+
             SiClickGoTo[2] = "file:///C:/Users/Luka2/Documents/Cours_S1_IUT/Projet_S1/%C3%A9venement.html";
             imgPath[2] = i2.src;
             }
+
         a = 0;
-        function StartAnim()
-            {
+
+        function StartAnim() {
             if (version >= 3)
                 {
                 document.write('<a href="#" onclick="ImgDest();return(false)"><img src="url_image0" border="0" alt="Menu" name="defil" /></a>');
@@ -39,12 +48,12 @@
                 document.write('<a href="Lien0"><img src="url_image0" border="0" /></a>')
                 }
             }
-        function ImgDest()
-            {
+
+        function ImgDest() {
             document.location.href = SiClickGoTo[a-1];
             }
-        function defilimg()
-            {
+
+        function defilimg() {
             if (a == 3)
                 {
                 a = 0;
@@ -56,14 +65,16 @@
                 a++;
                 }
             }
+
         </script>
 
 </head>
 
 <body>
-    <header>
-        <p class='compte'><a href='personnage.html'><img src='images/personnage.png' class='personnage'></a></p>
-        <h1>Bienvenue sur le site de l'ETIQ</h1>
+
+    <header class="headerAccueil">
+        <a href='personnage.html' class='compte'><img src='images/personnage.png' class='personnage'></a>
+        <h1 class="mainTitle">Bienvenue sur le site de l'ETIQ</h1>
 
         <nav>
             <ul>
@@ -85,12 +96,16 @@
             </ul>
         </nav>
     </header>
+
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
     <div class="script1"> <script language="javascript">
         StartAnim();
         </script>
     </div> 
+
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
 	<div class='evenement'>
 	    <div class='elementinfo'>
 	        <h3>Evenement</h3>
@@ -99,14 +114,18 @@
 	            <li>Nouvelle vidéo disponible sur <a href="https://www.youtube.com/watch?v=qBWjHo-Krdc&feature=share&fbclid=IwAR0qYf65WIiA8bqTUjavO81upVOpzC7tCBkbdX6u55LHFPJ8XDnAM8jx6zI" class="actualité">youtube</a>, la voix du renard épisode 7.</li>
 	        </ul>
 	    </div>  
+
 	<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
 	    <div class='elementinfo'>
 	        <h3>Avantages</h3>
 	        <ul>
 	            <li>Adhérer à l'association de l'ETIQ offre de nombreux avanatges pour plus d'information cliquer <a href="Avantages.html" class="actualité">ici</a></li>
 	        </ul>
 	    </div>
+
 	<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
 	    <div class='elementinfo'>
 	        <h3>Forum</h3>
 	        <ul>
@@ -115,7 +134,9 @@
 	        </ul>
 	    </div>
 	</div>
+
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <div class='sommaire'><h2>Présentation de l'association de l'ETIQ</h2>
     <ol>
         <li><a href="#I">Qu'est-ce que l'ETIQ</a></li>
@@ -131,7 +152,9 @@
             </ol>
     </ol>
 </div>   
+
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
     <h2 id="I">Qu'est-ce que l'ETIQ?</h2>
     <p>
         L’ETIQ est une association créée depuis de nombreuses années (1983) par les étudiants, et pour les étudiants.
@@ -188,5 +211,6 @@
         compris entre 1 et 5 qui va venir s'appliquer à votre moyenne. Cela n'est pas à négliger surtout si vous avez des difficultés
         avec l'apprentissage.
     </p>
+
 </body>
 </html>

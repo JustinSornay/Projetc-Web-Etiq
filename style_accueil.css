@@ -38,10 +38,14 @@ h3{
 	text-decoration: underline;
 }
 .mainTitle{
-	font-size: 
-	padding: 10px;
-	margin: 25px 20% 25px 20%;
+	font-size: max(1.5em, 2.75em);
+	padding: 15px 50px 15px 50px;
+	margin: 25px 29.5% 25px 29.5%;
 	background-color: #FFFEF4;
 	color: #1F2124;
 	text-align: center;
+	border-radius: 20px;
 }
+.headerAccueil{
+    padding-bottom: 70px;
+}  
