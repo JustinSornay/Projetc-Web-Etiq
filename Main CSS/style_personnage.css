@@ -37,7 +37,25 @@ position:absolute;
    top:50%;
    left:50%;
    width:500px; 
-   height:200px; 
+   height:230px; 
    margin-left:-250px;
    margin-top:-100px; 
+}
+.retour{
+    margin-left: 20px;
+    position: absolute;
+    top: 95%;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 75px;
+    text-indent: 10px;
+    background-color:  white;
+    color: black;
+    text-decoration: none;
+}
+.retour:hover{
+    text-decoration: underline;
+    color: red;
+
 }
