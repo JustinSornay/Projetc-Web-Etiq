@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main CSS/style_personnage.css" />
+    <link rel="stylesheet" href="Main CSS/style_login.css"/>
+    <title>Login</title>
+</head>
+<body>
+    <h2> Veuillez vous connecter : </h2>
+    <div clas='Login'>
+        <form action="Main PHP/login.php" method="get" class='login'>
+
+            <img src="Image/personnage.png" class="personnage">
+    
+            <p>
+                <label for='mail'>Email :</label>
+                <input type='email' name="Mail" id='form' required>
+            </p>
+    
+            <p>
+                <label for='mdp'>mot de passe :</laber>
+                <input type='password' name="mdp" size="10" maxlength="20" required>
+            </p>
+
+            <p>
+                Classe :
+                <Select name='Classe' size='1' id='form'>
+                <option value="A">Classe A</option>
+                <option value="B">Classe B</option>
+                <option value="C">Classe C</option>
+                <option value="D">Classe D</option>
+                <option value="E">Classe E</option>
+                </Select>
+            </p>
+
+            <p class='confirmer'>
+                <label for='Confirmer' id='Confirmer'></label>
+                <input type='submit' value='Confirmer' id='Confirmer' >
+            </p>
+
+            <p>Vous ne posséder pas encore de compte ? N'hésitez pas à vous <a href="PersonnageJu.html">enregistrer</a></pW>
+    
+        </form>
+        </div>
+    <a href="Accueil.html" class="retour">Retour</a>
+
+    
+</body>
+</html>
