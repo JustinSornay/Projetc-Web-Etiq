@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="Main CSS/register.css" rel="stylesheet" type="text/css">
+	<title>Nous rejoindre</title>  
+</head>
+
+<body>
+<div class="session">
+	<div class="left">
+		<h1>ETIQ</h1> <!-- Titre a gauche -->   <!--texte paragraphe -->
+		<p id="longtext1">Tout d'abord il est bien évidemment possible de participer aux activités de l'ETIQ sans être membre, mais si vous avez envie de vous investir, de donner votre avis ou juste d’être tenu informé, vous pouvez devenir membre de l’association.</p> 
+		<p id="longtext2">L’inscription est ouverte à tous (pour les mineurs une autorisation parentale signée est nécessaire) et elle prend effet au paiement de la cotisation qui coûte 5€ à l’année.</p> <!-- sous titre-->
+		<p id="longtext3">Vous pouvez également venir assister à nos animations afin de venir nous poser des questions directement. Nous sommes également disponibles sur les réseaux sociaux.</p>
+	</div>
+	<div class="form-login">
+		<h4><span>Nous rejoindre</span></h4> <!-- titre a droite-->
+		<p>Vous êtes intéressé par l'association de L'ETIQ?</p>
+		
+
+		<form action="Main PHP/register.php" method="post" accept-charset="utf-8">
+			<div class="floating-label">
+
+					<input placeholder="Nom" type="text" name="lastname" id="lastname"  required>
+					<label for="lastname"></label>
+
+					<input placeholder="Prenom" type="text" name="firstname" id="firstname"  required>
+					<label for="firstname"></label></br></br>
+					
+					<input placeholder="E-mail IUT" type="email" name="Mail" id="email"  required>
+					<label for="email"></label>	
+					
+					<input placeholder="Mot de passe" type="password" name="password" id="password"  required>
+					<label for="password"></label>
+
+					<input placeholder="Téléphone" type="tel" name="telephone" id="phone"  required>
+					<label for="phone"></label>
+
+					<input placeholder="Date de naissance" type="date" name="born" id="born"  required>
+					<label for="born"></label>
+
+					
+
+			</div>
+				<button class="btn-submit" type="submit">Envoyer</button>
+				</form>			
+			</div>
+		</div>	
+</body>
+</html>
