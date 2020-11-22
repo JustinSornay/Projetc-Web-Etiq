@@ -7,7 +7,7 @@ include 'Connecbdd.php';
   $log->execute(array('Mail' => $Mail));
   $resultat = $log->fetch();
 
-    $PassCorrect = password_verify($_POST['mdp'], $resultat['mdp']);
+    $PassCorrect = password_verify($_POST['mdp'], $resultat['mdp']);  //vérification de mdp avec la bdd renvoie TRUE ou FALSE
 
 
   if ($PassCorrect) {
