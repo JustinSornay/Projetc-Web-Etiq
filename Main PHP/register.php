@@ -1,5 +1,5 @@
 <?php
-include 'Connecbdd.php';
+include 'Connecbdd.php';  //Connection a la bdd
 
 
 $res = $pdo->prepare('INSERT INTO personne(Nom, Prenom, mdp, Mail, Tel, DateNaiss) VALUES(:Nom, :Prenom, :mdp, :Mail, :Tel, :DateNaiss)');
