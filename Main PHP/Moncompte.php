@@ -43,7 +43,18 @@ if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) { //si l'use
             </ul>
         </nav><br><br><br><br>
     </header>
+        <?php
+    if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) {
+    ?>
     <p>Bonjour <?php echo $Info_User['Prenom']; ?></p>
+    <?php
+    }
+    else {
+    ?>
+    <p>Connecté Vous !</p>
+    <?php
+    }
+     ?>
     <a href="deconnexion.php"><input type="button" value="Déconnexion"></a>
 </body>
 </html>
