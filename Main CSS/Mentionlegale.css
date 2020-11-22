@@ -1,0 +1,61 @@
+Body{
+    background-color:#b9b7b7;
+    margin-left: 8px;
+    margin-top: 5px;    
+    font-family: "Tahoma, Geneva, Verdana, sans-serif";
+    padding :12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:0px;
+	margin-right: 0px;
+}
+
+/*titre*/
+h1
+{
+    margin: 20px;                                                   
+    text-align :center;
+    font-size : 2em;
+    color: Black;
+    margin-bottom: 0em;
+}
+
+h2
+{
+    border-bottom: 1.8px solid rgb(243, 143, 12);
+    font-size :1.5em;
+    color:black;
+}
+
+h3
+{
+    color: rgb(250, 105, 8);
+    font-size: 1.3em;
+    text-indent:10px;
+    font-weight: bold;
+}
+
+.sub_h1
+{
+    text-align: center;
+    color: #8c0000;
+    font-style: italic;
+    font-size: 1.6em;
+    margin-left: 0.2em;
+}
+/*liens*/
+a
+{
+    color: rgb(255, 136, 0);
+}
+
+a:visited{
+	color:salmon;
+}
+
+p{
+   color: black;
+   font-family: var;
+   font-size :1.02em; 
+}
+
