@@ -15,7 +15,7 @@ $res = $pdo->prepare('INSERT INTO personne(Nom, Prenom, mdp, Mail, Tel, DateNais
 
 $res->bindValue(':Nom', $_GET['Nom'], PDO::PARAM_STR);
 $res->bindValue(':Prenom', $_GET['Prenom'], PDO::PARAM_STR);
-$res->bindValue(':mdp', $_GET['mdp'], PDO::PARAM_STR);
+$res->bindValue(':mdp', password_hash($_GET['mdp'], PDO::PARAM_STR));
 $res->bindValue(':Mail', $_GET['Mail'], PDO::PARAM_STR);
 $res->bindValue(':Tel', $_GET['telephone'], PDO::PARAM_STR);
 $res->bindValue(':DateNaiss', $_GET['born'], PDO::PARAM_STR);
