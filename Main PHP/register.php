@@ -1,14 +1,5 @@
 <?php
-try{
-
-
-$pdo = new PDO('mysql:host=localhost;dbname=projets1;charset=utf8', 'root', '');
-}
-catch(Exception $e)
-{
-    die('Erreur : ' . $e->getMessage());
-}
-
+include 'Connecbdd.php';
 
 
 $res = $pdo->prepare('INSERT INTO personne(Nom, Prenom, mdp, Mail, Tel, DateNaiss) VALUES(:Nom, :Prenom, :mdp, :Mail, :Tel, :DateNaiss)');
