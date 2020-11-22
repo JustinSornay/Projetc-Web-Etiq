@@ -11,16 +11,14 @@ catch(Exception $e)
 
 
 
-$res = $pdo->prepare('INSERT INTO personne(Nom, Prenom, Annee, Adherent, mdp, Classe, Groupe, Mail) VALUES(:Nom, :Prenom, :Annee, :membreETIQ, :mdp, :Classe, :Groupe, :Mail)');
+$res = $pdo->prepare('INSERT INTO personne(Nom, Prenom, mdp, Mail, Tel, DateNaiss) VALUES(:Nom, :Prenom, :mdp, :Mail, :Tel, :DateNaiss)');
 
 $res->bindValue(':Nom', $_GET['Nom'], PDO::PARAM_STR);
 $res->bindValue(':Prenom', $_GET['Prenom'], PDO::PARAM_STR);
-$res->bindValue(':Annee', $_GET['Annee'], PDO::PARAM_STR);
-$res->bindValue(':membreETIQ', $_GET['membreETIQ'], PDO::PARAM_STR);
 $res->bindValue(':mdp', $_GET['mdp'], PDO::PARAM_STR);
-$res->bindValue(':Classe', $_GET['Classe'], PDO::PARAM_STR);
-$res->bindValue(':Groupe', $_GET['Groupe'], PDO::PARAM_STR);
 $res->bindValue(':Mail', $_GET['Mail'], PDO::PARAM_STR);
+$res->bindValue(':Tel', $_GET['telephone'], PDO::PARAM_STR);
+$res->bindValue(':DateNaiss', $_GET['born'], PDO::PARAM_STR);
 
 $insertPdo = $res->execute();
 
