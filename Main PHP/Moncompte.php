@@ -1,13 +1,13 @@
 <?php
 session_start();
-include 'Connecbdd.php';
+include 'Connecbdd.php';  //Connection a la bdd
 
-if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) {
+if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) { //si l'user c'est connecté
 
 
-  $Req_Info_User = $pdo->prepare('SELECT * from personne Where IdAdherent=?');
-  $Req_Info_User->execute(array($_SESSION['IdAdherent']));
-  $Info_User = $Req_Info_User->fetch();
+  $Req_Info_User = $pdo->prepare('SELECT * from personne Where IdAdherent=?'); 
+  $Req_Info_User->execute(array($_SESSION['IdAdherent']));  //exécute la requete ou l'identifier est $_SESSION['IdDdhérent']
+  $Info_User = $Req_Info_User->fetch(); //stocke les infos de la requete ou l'identifier est $_SESSION['IdDdhérent'] dans $Info_User
 }
 
  ?>
