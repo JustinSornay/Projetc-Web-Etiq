@@ -266,7 +266,7 @@ input:focus {
     width: auto;
     min-width: 160px;
     border-radius: 24px;
-    text-align: justify;
+    text-align: center;
     padding: 15px 40px;
     margin-top: 15px;
     background-color: #fff !important;
