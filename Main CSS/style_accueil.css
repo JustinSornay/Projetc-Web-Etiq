@@ -1,0 +1,47 @@
+.evenement{
+	position: relative;
+    float: right;
+    max-width: 250px;
+    color: #FFFEF4;
+    top: 15px;
+}
+.elementinfo{
+	position: relative;
+	top: 10px;
+	background-color: #1F2124; 
+	padding: 1px 20px 15px 15px;
+    margin: 5px;
+}
+.script1{
+    width: 33.6%;
+    float: left;
+    border: 1px solid black;
+    margin-left: 450px;
+    margin-top: 20px;
+}
+.actualité{
+    text-decoration: none;
+    color: #F17F42;
+}
+.actualité:hover{
+    text-decoration: none;
+    color: #F6B352;
+}
+.personnage{
+    width: 3.5%;
+    float: right;
+    margin-right: 20px;
+    border: 1px solid white;
+    background-color: white;
+}
+h3{
+	text-decoration: underline;
+}
+.mainTitle{
+	font-size: 
+	padding: 10px;
+	margin: 25px 20% 25px 20%;
+	background-color: #FFFEF4;
+	color: #1F2124;
+	text-align: center;
+}

@@ -1,0 +1,61 @@
+body {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-size: 100% ;
+    width:100%;  
+    color:black;
+}
+header{
+    border: 1px solid #1F2124;
+    background-color: #1F2124;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 70px;
+}  
+body:before {
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+    background: url('https://th.bing.com/th/id/OIP.RJ8XoeD95Axab3PT4FIUqgHaFj?pid=Api&rs=1');
+    background-size: cover;
+    z-index: -1;    
+   -webkit-filter: blur(8px);
+
+}
+form{
+    border: 1px solid orangered;
+    border-radius: 1em;
+    background-color: white;
+}
+
+.formulaire{
+position:absolute;
+   top:50%;
+   left:50%;
+   width:500px; 
+   height:230px; 
+   margin-left:-250px;
+   margin-top:-100px; 
+}
+.retour{
+    margin-left: 20px;
+    position: absolute;
+    top: 95%;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 75px;
+    text-indent: 10px;
+    background-color:  white;
+    color: black;
+    text-decoration: none;
+}
+.retour:hover{
+    text-decoration: underline;
+    color: red;
+
+}
