@@ -1,13 +1,5 @@
-Body{
+body{
     background-color:#b9b7b7;
-    margin-left: 8px;
-    margin-top: 5px;    
-    font-family: "Tahoma, Geneva, Verdana, sans-serif";
-    padding :12px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left:0px;
-	margin-right: 0px;
 }
 
 /*titre*/
@@ -44,14 +36,6 @@ h3
     margin-left: 0.2em;
 }
 /*liens*/
-a
-{
-    color: rgb(255, 136, 0);
-}
-
-a:visited{
-	color:salmon;
-}
 
 p{
    color: black;
@@ -59,3 +43,7 @@ p{
    font-size :1.02em; 
 }
 
+.menu{
+    position: relative;
+    bottom: 7px;
+}
