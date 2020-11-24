@@ -54,7 +54,7 @@
 
 
 .titre,.titre2{
-   background-color: #EF904F;
+   background-color: #F68657;
    padding: 4px 7px 4px 7px;
    text-align: center;
    width: 50%;
@@ -67,22 +67,27 @@
 
 
 .Presentation{
+	position: relative;
     background-color: white;
     width: 82%;
     padding: 1px 20px 20px 0;
 }
 .sousPresentation{
-	margin: 75px 10px 30px 30px;
+	margin: 25px 10px 30px 30px;
 }
 .sousSousPresentation{
 	margin: 50px 30px 20px 20px;
 }
 .TitrePresentation{
+	color: #F17F42;
     text-align: center;
+    font-size: 2.25em;
+	background-color: #1F2124;
+	padding: 40px 0 40px 0;
+	font-style: italic;
 }
-h2{
-	position: relative;
-	bottom: 40px;
+#I,#II{
+	text-decoration: overline;
 }
 h4{
 	position: relative;
@@ -90,7 +95,7 @@ h4{
     font-size: 1.35em;
 }
 .textePresentation{
-    border-left: 4px solid black;
+    border-left: 4px solid #1F2124;
     padding-left: 40px;
 }
 
