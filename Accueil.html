@@ -9,208 +9,172 @@
     <link rel="stylesheet" href="Main-CSS/style.css"/>
     <title>Site web de l'ETIQ</title>
 
-    <script language="javascript">
-
-        imgPath = new Array;
-        SiClickGoTo = new Array;
-        version = navigator.appVersion.substring(0,1);
-
-        if (version >= 3) {
-            i0 = new Image;
-            i0.src = 'https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-0/c0.83.526.275a/p526x296/107738073_1780709122053467_5355117668635489162_o.jpg?_nc_cat=106&ccb=2&_nc_sid=340051&_nc_ohc=JSoQ_TzJpdgAX9eoTL5&_nc_ht=scontent-frt3-1.xx&tp=27&oh=6d8e71c067265866f261e7f4fbee3512&oe=5FC1AB72';
-
-            SiClickGoTo[0] = "https://www.facebook.com/events/1408499879347369/";
-            imgPath[0] = i0.src;
-
-            i1 = new Image;
-            i1.src = 'https://external-frt3-2.xx.fbcdn.net/safe_image.php?d=AQDJeTq-ie5jg8XB&w=500&h=261&url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FqBWjHo-Krdc%2Fmaxresdefault.jpg&cfs=1&ext=jpg&_nc_cb=1&_nc_hash=AQD8gIF3wDm-a6sq';
-
-            SiClickGoTo[1] = "file:///C:/Users/Luka2/Documents/Cours_S1_IUT/Projet_S1/%C3%A9venement.html";
-            imgPath[1] = i1.src;
-
-            i2 = new Image;
-            i2.src = 'https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-0/c0.83.526.275a/p526x296/94612847_1610476489076732_222594222077771776_n.jpg?_nc_cat=102&ccb=2&_nc_sid=340051&_nc_ohc=ENQtHAPD9YMAX-aIG0I&_nc_ht=scontent-frt3-1.xx&tp=27&oh=0ea59ea460fe486dfc5879ba01871daa&oe=5FC237B4';
-
-            SiClickGoTo[2] = "file:///C:/Users/Luka2/Documents/Cours_S1_IUT/Projet_S1/%C3%A9venement.html";
-            imgPath[2] = i2.src;
-            }
-
-        a = 0;
-
-        function StartAnim() {
-            if (version >= 3)
-                {
-                document.write('<a href="#" onclick="ImgDest();return(false)"><img src="url_image0" border="0" alt="Menu" name="defil" /></a>');
-                defilimg()
-                }
-            else
-                {
-                document.write('<a href="Lien0"><img src="url_image0" border="0" /></a>')
-                }
-            }
-
-        function ImgDest() {
-            document.location.href = SiClickGoTo[a-1];
-            }
-
-        function defilimg() {
-            if (a == 3)
-                {
-                a = 0;
-                }
-            if (version >= 3)
-                {
-                document.defil.src = imgPath[a];
-                tempo3 = setTimeout("defilimg()",5000);
-                a++;
-                }
-            }
-
-        </script>
-
 </head>
 
 <body>
 
-    <header class="headerAccueil">
-        <a href='personnage.html' class='compte'><img src='images/personnage.png' class='personnage'></a>
-        <h1 class="mainTitle">Bienvenue sur le site de l'ETIQ</h1>
-
+    <header>
+        <h1 id="mainTitle">Etiq</h1>
         <nav>
             <ul>
-                <li class="deroulante"><a href="Accueil.html">Accueil</a>
+                <li class="deroulante"><a href="accueil.html" class="menu">Accueil</a></li>
+                
+                <li class="deroulante"><a href="Forum.html" class="menu">Forum ▼</a>
                     <ul class="sous">
-                        <li><a href="Accueil.html" type="nav" alt="Accueil"> Accueil</a></li>
-                        <li><a href="Contact.html" type="nav" alt="Nous contacter">Nous contacter</a></li>
-                        <li><a href="Forum.html" type="nav" alt="Forum"> Forum</a></li>
+                        <li><a href="forum.html" class="menu">Forum </a></li>
+                        <li><a href="adhésion.html" class="menu">Adhésion</a></li>
                     </ul>
                 </li>
-                <li class="deroulante"><a href="Moncompte.html">MonCompte</a>
-                <ul class="sous">
-                    <li><a href="Forum.html">Forum</a></li>
-                    <li><a href="Adhésion.html">Adhésion</a></li>
-                </ul>
+
+                <li><a href="Avantages.html" class="menu">Etiq ▼</a>
+                    <ul class="sous">
+                        <li><a href="adhésion.html" class="menu">Adhésion </a></li>
+                        <li><a href="evenement.html" class="menu">Evenement</a></li>
+                    </ul>
                 </li>
-                <li><a href="Avantages.html">Avantages</a></li>
-                <li><a href="Evenement.html">évenement</a></li>
+
+                <li><a href="Moncompte.html" class="menu">Mon compte ▼</a></li>
             </ul>
         </nav>
+        
     </header>
+    <div id="carrouselle"></div>
+   
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <div class="corps">
+        <div class="evenement">
+            <div class="elementinfo2">
+                <h3 class="titre">Sommaire</h3>
+                <ol>
+                    <li><a class="mainSommaire" href="#I">Qu'est-ce que l'ETIQ?</a></li>
+                    <li><a href="#I.1">Qu'est-ce que l'on fait?</a></li>
+                    <li><a href="#I.2">A quoi sert cette association</a></li>
+                    <li><a href="#I.3">Comment devenir membre</a></li>
+                    <li><a class="mainSommaire" href ="#II">Les avantages de l'association</a></li>
+                    <li><a href="#II.1">Aide à la vie étudiante</a></li>
+                    <li><a href="#II.2">Action valorisante pour le diplôme</a></li>
+                </ol>
+            </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="elementinfo3">
+            <h3 class="titre2">Actualité</h3> 
+	        <div class='elementinfo'>
+	            <h4>Evenement</h4>
+	            <ul>
+	                <li>Quizz manga disponible sur le <a href="https://www.facebook.com/events/1408499879347369/" class="actualité">facebook</a> de l'ETIQ. Article publié le 9 juillet 2020.</li><br>
+	                <li>Nouvelle vidéo disponible sur <a href="https://www.youtube.com/watch?v=qBWjHo-Krdc&feature=share&fbclid=IwAR0qYf65WIiA8bqTUjavO81upVOpzC7tCBkbdX6u55LHFPJ8XDnAM8jx6zI" class="actualité">youtube</a>, la voix du renard épisode 7.</li>
+	            </ul>
+                </div> 
 
-    <div class="script1"> <script language="javascript">
-        StartAnim();
-        </script>
-    </div> 
+	        <div class='elementinfo'>
+	            <h4>Avantages</h4>
+	            <ul>
+	                <li>Adhérer à l'association de l'ETIQ offre de nombreux avanatges pour plus d'information cliquer <a href="Avantages.html" class="actualité">ici</a></li>
+	            </ul>
+	        </div>
 
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
-	<div class='evenement'>
-	    <div class='elementinfo'>
-	        <h3>Evenement</h3>
-	        <ul>
-	            <li>Quizz manga disponible sur le <a href="https://www.facebook.com/events/1408499879347369/" class="actualité">facebook</a> de l'ETIQ. Article publié le 9 juillet 2020.</li><br>
-	            <li>Nouvelle vidéo disponible sur <a href="https://www.youtube.com/watch?v=qBWjHo-Krdc&feature=share&fbclid=IwAR0qYf65WIiA8bqTUjavO81upVOpzC7tCBkbdX6u55LHFPJ8XDnAM8jx6zI" class="actualité">youtube</a>, la voix du renard épisode 7.</li>
-	        </ul>
-	    </div>  
-
-	<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
-	    <div class='elementinfo'>
-	        <h3>Avantages</h3>
-	        <ul>
-	            <li>Adhérer à l'association de l'ETIQ offre de nombreux avanatges pour plus d'information cliquer <a href="Avantages.html" class="actualité">ici</a></li>
-	        </ul>
-	    </div>
-
-	<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
-	    <div class='elementinfo'>
-	        <h3>Forum</h3>
-	        <ul>
-	            <li>Vous avez des question par rapport à l'association? N'hésiter pas à aller faire un tour sur notre <a href="Forum.html" class="actualité">Forum</a>.</li><br>
-	            <li>Vous avez besoin d'aide pour réaliser un travail en particulier? Vous trouverez sûrement de l'aide <a href="Forum.html" class="actualité">ici</a>.</li>
-	        </ul>
-	    </div>
+	        <div class='elementinfo'>
+	            <h4>Forum</h4>
+	            <ul>
+	                <li>Vous avez des question par rapport à l'association? N'hésiter pas à aller faire un tour sur notre <a href="forum.html" class="actualité">Forum</a>.</li><br>
+	                <li>Vous avez besoin d'aide pour réaliser un travail en particulier? Vous trouverez sûrement de l'aide <a href="forum.html" class="actualité">ici</a>.</li>
+	            </ul>
+            </div>
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        
+     <img src="Image/affiche.jpg" class="planning">    
 	</div>
 
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="Presentation">
+        <div class="sousPresentation">
+            <h2 class="TitrePresentation">Présentation de l'association de l'ETIQ</h2>
+            <h3 id="I">Qu'est-ce que l'ETIQ?</h3>
+            <p>
+                L’ETIQ est une association créée depuis de nombreuses années (1983) par les étudiants, et pour les étudiants.
+                Une salle leur est consacrée. C’est un espace de détente où les étudiants qui se sont inscrits peuvent acheter des boissons, 
+                de la nourriture, jouer à des jeux de société ou bien encore s’amuser sur des consoles mises à disposition.
+                L’ETIQ est donc l’association étudiante de l’IUT de Dijon.
+                <br>
+                Elle réunit les différents étudiants et anciens étudiants de la promotion IUT Informatique.
+                Elle comporte des locaux au sein de l’IUT au premier étage. Vous pourrez y passer du temps : il y a des canapés pour se poser,
+                des consoles de jeux, divers jeux de société comme les échecs par exemple !
+            </p>
+            <div class="sousSousPresentation">
+                <div class="texte">
+                <h4 id="I.1">Qu'est-ce que l'on fait?</h4>
+                <p>Des évènements y sont régulièrement organisés, comme des sorties au cinéma par exemple ainsi que des soirées à thèmes. 
+                    C’est l’association qui gère la soirée d’intégration, à la rentrée.
+                    Bien que certains évènements ne soient pas gratuits, la totalité de l’argent qui est générée par ces évènements est uniquement 
+                    réinvesti pour les futurs évènements ou concept de l’ETIQ.
+                    <br>
+                    Les membres de l’ETIQ organisent notamment des cours de soutien non obligatoire pour les premières années. La présence y est 
+                    inscrite. Cette liste est ensuite transmise à l’établissement et peut faire pencher la balance sur les prises de décisions des 
+                    enseignants pour les étudiants en difficultés pour qui il manque peu de points (0.5 points près) pour ne pas redoubler ou quitter 
+                    l’IUT.
+                </p>
+                </div>
+                
+                <div class="texte">
+                <h4 id="I.2">A quoi sert cette association</h4>
+                <p> ETIQ souhaite favoriser la solidarité et l'entraide entre les anciens et nouveaux étudiants de l'IUT Informatique de Dijon.</p>
+                </div>
 
-<div class='sommaire'><h2>Présentation de l'association de l'ETIQ</h2>
-    <ol>
-        <li><a href="#I">Qu'est-ce que l'ETIQ</a></li>
-            <ol>
-                <li><a href="#I.1">Qu'est-ce que l'on fait?</a></li>
-                <li><a href="#I.2">A quoi sert cette association</a></li>
-                <li><a href="#I.3">Comment devenir membre</a></li>
-            </ol>
-        <li><a href ="#II">Les avantages de l'association</a></li>
-            <ol>
-                <li><a href="#II.1">Aide à la vie étudiante</a></li>
-                <li><a href="#II.2">Action valorisante pour le diplôme</a></li>
-            </ol>
-    </ol>
-</div>   
+                <div class="texte">
+                <h4 id="I.3">Comment devenir membre</h4>
+                <p>L’inscription coute 5 euros par personne en plus de recevoir une première boisson gratuite. Cet argent sert à financer le matériel 
+                    mis à disposition des étudiants qui ont adhéré à l’ETIQ, mais aussi des évènements en tous genres qu’elle organise. Ces évènements 
+                    peuvent être des soirées, des avant-premières de films, des repas, des fêtes, des sorties comme des Laser Game, des courses 
+                    d’orientation, des barbecues, des concours, et plein d’autres évènements tout au long de l’année. Les jeudis après-midi 
+                    (remplace le mercredi au lycée) font souvent l’objet d’animation.
+                    Pour plus d'informations cliquer <a href='adhésion.html'>ici</a>
+                </p>
+            </div>
+        </div>
+    </div>
 
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    </div>
+    <img src="Image/membres.jpg" class="membre">
+    <div class="Presentation">  
+        <div class="sousPresentation">
 
-    <h2 id="I">Qu'est-ce que l'ETIQ?</h2>
-    <p>
-        L’ETIQ est une association créée depuis de nombreuses années (1983) par les étudiants, et pour les étudiants.
-        Une salle leur est consacrée. C’est un espace de détente où les étudiants qui se sont inscrits peuvent acheter des boissons, 
-        de la nourriture, jouer à des jeux de société ou bien encore s’amuser sur des consoles mises à disposition.<br><br> 
-        L’ETIQ est donc l’association étudiante de l’IUT de Dijon.
-        Elle réunit les différents étudiants et anciens étudiants de la promotion IUT Informatique.
-        Elle comporte des locaux au sein de l’IUT au premier étage. Vous pourrez y passer du temps : il y a des canapés pour se poser,
-        des consoles de jeux, divers jeux de société comme les échecs par exemple !
-    </p>
+            <h3 id="II">Les avantages de l'association</h3>
 
-    <h3 id="I.1">Qu'est-ce que l'on fait?</h3>
-    <p>Des évènements y sont régulièrement organisés, comme des sorties au cinéma par exemple ainsi que des soirées à thèmes. 
-        C’est l’association qui gère la soirée d’intégration, à la rentrée.<br><br>
-        Bien que certains évènements ne soient pas gratuits, la totalité de l’argent qui est générée par ces évènements est uniquement 
-        réinvesti pour les futurs évènements ou concept de l’ETIQ.<br><br> 
-        Les membres de l’ETIQ organisent notamment des cours de soutien non obligatoire pour les premières années. La présence y est 
-        inscrite. Cette liste est ensuite transmise à l’établissement et peut faire pencher la balance sur les prises de décisions des 
-        enseignants pour les étudiants en difficultés pour qui il manque peu de points (0.5 points près) pour ne pas redoubler ou quitter 
-        l’IUT.
-    </p>
+            <div class="sousSousPresentation">
+                <div class="texte">
+                    <h4 id="II.1">Aide à la vie étudiante</h4>
+                    <p>
+                        L'ETIQ vous offre la possibilité de vous aider dans votre cursus scolaire. Si vous avez des difficultés avec une matière et que vous êtes intéressé par le projet de tutorat, vous pouvez cliquer 
+                        <a href="images/tutorat_etiq.jpg" download="Acme Documentation (ver. 2.0.1).jpg">ici</a>
+                        pour télécharger
+                        le document à rendre aux membres de l'association.</br></br>
+                        Etre membre d'une association est valorisant pour votre vie professionnel futur. En effet, le fait d'adhérer une association
+                        va accentuer votre investissement ce qui sera trés valorisateur auprès des entretiens d'embauche.
+                        
+                        
+                    </p>
+                    </div>
+                    
+                    <div class="texte">
+                    <h4 id="II.2">Action valorisante pour le diplôme</h4>
+                    <p>Devenir membre d'une association vous permetra de profiter du BONUS ETUDIANT. Ce bonus va vous permettre de gagner un pourcentage
+                        compris entre 1 et 5 qui va venir s'appliquer à votre moyenne. Cela n'est pas à négliger surtout si vous avez des difficultés
+                        avec l'apprentissage.
+                    </p>
+                    </div>
 
-    <h3 id="I.2">A quoi sert cette association</h3>
-    <p> ETIQ souhaite favoriser la solidarité et l'entraide entre les anciens et nouveaux étudiants de l'IUT Informatique de Dijon.
-
-    </p>
-
-    <h3 id="I.3">Comment devenir membre</h3>
-    <p>L’inscription coute 5 euros par personne en plus de recevoir une première boisson gratuite. Cet argent sert à financer le matériel 
-        mis à disposition des étudiants qui ont adhéré à l’ETIQ, mais aussi des évènements en tous genres qu’elle organise. Ces évènements 
-        peuvent être des soirées, des avant-premières de films, des repas, des fêtes, des sorties comme des Laser Game, des courses 
-        d’orientation, des barbecues, des concours, et plein d’autres évènements tout au long de l’année. Les jeudis après-midi 
-        (remplace le mercredi au lycée) font souvent l’objet d’animation.<br>
-        Pour plus d'informations cliquer <a href='Adhésion.html'>ici</a>
-    </p>
-
-    <h2 id="II">Les avantages de l'association</h2>
-    <p></p>
-
-    <h3 id="II.1">Aide à la vie étudiante</h3>
-    <p>
-        - L'ETIQ vous offre la possibilité de vous aider dans votre cursus scolaire. Si vous avez des difficultés avec une matière et que vous êtes intéressé par le projet de tutorat, vous pouvez cliquer 
-        <a href="images/tutorat_etiq.jpg" download="Acme Documentation (ver. 2.0.1).jpg">ici</a>
-        pour télécharger
-        le document à rendre aux membres de l'association.<br><br>
-        - Etre membre d'une association est valorisant pour votre vie professionnel futur. En effet, le fait d'adhérer une association
-        va accentuer votre investissement ce qui sera trés valorisateur auprès des entretiens d'embauche.<br><br>
-        
-        
-    </p>
-    
-    <h3 id="II.2">Action valorisante pour le diplôme</h3>
-    <p>Devenir membre d'une association vous permetra de profiter du BONUS ETUDIANT. Ce bonus va vous permettre de gagner un pourcentage
-        compris entre 1 et 5 qui va venir s'appliquer à votre moyenne. Cela n'est pas à négliger surtout si vous avez des difficultés
-        avec l'apprentissage.
-    </p>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <a href="PolitiqueConfi.html" class="nav2">Confidentialité</a>
+                <a href="Contact.html" class="nav2">Nous contacter</a>
+                <a href="MentionLégale.html" class="nav2">Mention légale</a>
+            </div>
+    </div>
 
 </body>
 </html>
