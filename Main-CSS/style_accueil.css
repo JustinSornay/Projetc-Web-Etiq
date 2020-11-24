@@ -1,3 +1,15 @@
+#mainTitle{
+	position: relative;
+	font-size: 3.5em;
+	padding: 10px 20px;
+}
+#carrouselle{
+	position: relative;
+	bottom: 26px;
+	right: 10px;
+	background-color: #44546A;
+	padding: 400px 100% 0 100%;
+}
 .evenement{
 	position: relative;
     float: right;
@@ -7,17 +19,19 @@
 }
 .elementinfo{
 	position: relative;
-	top: 10px;
 	background-color: #1F2124; 
-	padding: 1px 20px 15px 15px;
-    margin: 5px;
+	padding: 1px 20px 15px 20px;
+	margin-bottom: 5px; 
 }
-.script1{
-    width: 33.6%;
-    float: left;
-    border: 1px solid black;
-    margin-left: 450px;
-    margin-top: 20px;
+.elementinfo2{
+	background-color: white; 
+	padding: 1px 20px 15px 15px;
+	margin-bottom: 20px;
+}
+.elementinfo3{
+	background-color: white; 
+	padding: 1px 0 15px 0;
+	margin-bottom: 20px;
 }
 .actualité{
     text-decoration: none;
@@ -34,14 +48,95 @@
     border: 1px solid white;
     background-color: white;
 }
-h3{
-	text-decoration: underline;
+.titre{
+   background-color: #EF904F;
+   padding: 4px 7px 4px 7px;
+   text-align: center;
+   width: 50%;
+   font-size: 1.5em;
+   font-weight: lighter;
 }
-.mainTitle{
-	font-size: 
-	padding: 10px;
-	margin: 25px 20% 25px 20%;
-	background-color: #FFFEF4;
-	color: #1F2124;
-	text-align: center;
+.titre2{
+   background-color: #EF904F;
+   padding: 4px 7px 4px 7px;
+   margin-left: 15px;
+   text-align: center;
+   width: 50%;
+   font-size: 1.5em;
+   font-weight: lighter;
+}
+.Presentation{
+    background-color: white;
+    width: 82%;
+    padding: 1px 20px 20px 0;
+}
+.sousPresentation{
+	margin: 75px 20px;
+}
+.sousSousPresentation{
+	margin: 50px 20px;
+}
+.TitrePresentation{
+    text-align: center;
+}
+ol{
+	position: relative;
+	right: 31px;
+}
+ol li a{
+    color: black;
+    text-decoration: none;
+}
+ol li a:hover{
+    font-weight: bold;
+    border-left: 4px solid black;
+    padding-left: 5px;
+    right: 24px;
+}
+.mainSommaire{
+	text-decoration: underline;
+	position: relative;
+	right: 15px;
+	font-weight: bolder;
+	font-size: 1.1em;
+}
+h4{
+	position: relative;
+    text-align: left;
+    font-size: 1.35em;
+}
+.texte{
+    border-left: 4px solid black;
+    padding-left: 40px;
+}
+.membre{
+    width: 83%;
+    margin-top: 20px;
+    height: 55%;   
+}
+.planning{
+	width: 100%;
+}
+.navigation{
+    margin-top: 20px;
+    background-color: #1F2124;
+    height: 30px;
+    padding-left: 56%;
+    padding-top: 70px;
+    width: 27%;
+}
+.nav2{
+    color: white;
+    margin-left: 20px;
+    position: relative;
+}
+.nav2:hover{
+    border-left: none;
+}
+.menu:hover{
+    border-left: none;
+}
+.corps{
+	margin: 20px;
+
 }
