@@ -1,8 +1,16 @@
-#mainTitle{
+.headerAccueil{
 	position: relative;
-	font-size: 3.5em;
-	padding: 10px 20px;
+	bottom: 8px;
+	margin-left: 30%;
+	padding: 0 0 20px 0;
 }
+
+
+.corpsPage{
+	margin: 20px;
+}
+
+
 #carrouselle{
 	position: relative;
 	bottom: 26px;
@@ -10,25 +18,27 @@
 	background-color: #44546A;
 	padding: 400px 100% 0 100%;
 }
-.evenement{
+
+
+.bandeDroite{
 	position: relative;
     float: right;
-    max-width: 250px;
+    max-width: 290px;
     color: #FFFEF4;
-    top: 15px;
+	z-index: 1000;
 }
-.elementinfo{
+.elementActu{
 	position: relative;
 	background-color: #1F2124; 
 	padding: 1px 20px 15px 20px;
 	margin-bottom: 5px; 
 }
-.elementinfo2{
-	background-color: white; 
-	padding: 1px 20px 15px 15px;
-	margin-bottom: 20px;
+.planning{
+	width: 100%;
 }
-.elementinfo3{
+
+
+.divActu{
 	background-color: white; 
 	padding: 1px 0 15px 0;
 	margin-bottom: 20px;
@@ -41,14 +51,9 @@
     text-decoration: none;
     color: #F6B352;
 }
-.personnage{
-    width: 3.5%;
-    float: right;
-    margin-right: 20px;
-    border: 1px solid white;
-    background-color: white;
-}
-.titre{
+
+
+.titre,.titre2{
    background-color: #EF904F;
    padding: 4px 7px 4px 7px;
    text-align: center;
@@ -57,35 +62,74 @@
    font-weight: lighter;
 }
 .titre2{
-   background-color: #EF904F;
-   padding: 4px 7px 4px 7px;
    margin-left: 15px;
-   text-align: center;
-   width: 50%;
-   font-size: 1.5em;
-   font-weight: lighter;
 }
+
+
 .Presentation{
     background-color: white;
     width: 82%;
     padding: 1px 20px 20px 0;
 }
 .sousPresentation{
-	margin: 75px 20px;
+	margin: 75px 10px 30px 30px;
 }
 .sousSousPresentation{
-	margin: 50px 20px;
+	margin: 50px 30px 20px 20px;
 }
 .TitrePresentation{
     text-align: center;
+}
+h2{
+	position: relative;
+	bottom: 40px;
+}
+h4{
+	position: relative;
+    text-align: left;
+    font-size: 1.35em;
+}
+.textePresentation{
+    border-left: 4px solid black;
+    padding-left: 40px;
+}
+
+
+.divSommaire{
+	background-color: white; 
+	padding: 1px 20px 1px 15px;
+	margin-bottom: 20px;
+}
+.mainElementSommaire{
+	position: relative;
+	text-decoration: underline;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+.mainElementSommaire:hover{
+	right: 9px;
+}
+.elementSommaire:hover{
+	position: relative;
+	right: 9px;
+}
+.sousPartieSommaire{
+	position: relative;
+	left: 10px;
+	padding: 5px 0 15px 0;
+	display: inline-block;
 }
 ol{
 	position: relative;
 	right: 31px;
 }
+ol li{
+	padding: 1px 0 1px 0;
+}
 ol li a{
     color: black;
     text-decoration: none;
+    display: inline-block;
 }
 ol li a:hover{
     font-weight: bold;
@@ -93,50 +137,27 @@ ol li a:hover{
     padding-left: 5px;
     right: 24px;
 }
-.mainSommaire{
-	text-decoration: underline;
-	position: relative;
-	right: 15px;
-	font-weight: bolder;
-	font-size: 1.1em;
-}
-h4{
-	position: relative;
-    text-align: left;
-    font-size: 1.35em;
-}
-.texte{
-    border-left: 4px solid black;
-    padding-left: 40px;
-}
+
+
 .membre{
-    width: 83%;
-    margin-top: 20px;
-    height: 55%;   
+	position: relative;
+	top: 3px;
+    width: 83.1%;
+    margin-top: 17px; 
 }
-.planning{
-	width: 100%;
-}
-.navigation{
+
+
+.bandeFinPage{
     margin-top: 20px;
     background-color: #1F2124;
     height: 30px;
     padding-left: 56%;
     padding-top: 70px;
-    width: 27%;
+    width: 27.1%;
 }
-.nav2{
+.elementBandeFinPage{
     color: white;
     margin-left: 20px;
     position: relative;
-}
-.nav2:hover{
-    border-left: none;
-}
-.menu:hover{
-    border-left: none;
-}
-.corps{
-	margin: 20px;
-
+    text-decoration: none;
 }

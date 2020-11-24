@@ -3,6 +3,8 @@ body{
     overflow-x: hidden;
     font-family: monospace;
 }
+
+
 header{
     position: relative;
     right: 10px;
@@ -10,12 +12,23 @@ header{
     background-color: white;
     width: 110%;
 }  
-nav{
-	margin-left: 30%;
-	padding: 10px 0 20px;
+#mainTitle{
+	position: relative;
+	font-size: 3.5em;
+	padding: 10px 20px;
 }
-nav ul{
-    list-style-type: none;
+#descMainTitle{
+	position: relative;
+	top: 40px;
+	right: 100px;
+	font-style: italic;
+	opacity: 0.75;
+}
+nav{
+	position: relative;
+	bottom: 8px;
+	margin-left: 30%;
+	padding: 0 0 9px 0;
 }
 nav ul li{
 	display: inline-block;
@@ -34,8 +47,10 @@ nav a:hover{
     color: #EF904F;
     text-decoration: none;
     border-top: 5px solid #EF904F;
-  	padding-top: 11px; 
+  	padding-top: 18px; 
 }
+
+
 nav > ul li:hover .sous{
     display: block;
 }
@@ -49,21 +64,6 @@ nav > ul li:hover .sous{
     color: #F6B352;
     border-top: none;
 }
-h1{
-    color: black;
-    font-size: 2.75em;
-    float: left;
-    margin-top: 2px;
-    margin-left: 20px;
-}
-h2{
-    color: #1F2124;
-    margin: 30px 0 50px 20px;
-    font-size: 2.25em;
-}  
-h3{
-    font-size: 1.6em;
-}
 .sous{
     display: none;
     box-shadow: 3px 2px 5px #1F2124;
@@ -76,6 +76,22 @@ h3{
 .deroulante > a::after{
     content: "";
     font-size: 12px;
+}
+
+
+h1{
+    color: black;
+    font-size: 2.75em;
+    float: left;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+h2{
+    color: #1F2124;
+    font-size: 2.25em;
+}  
+h3{
+    font-size: 1.6em;
 }
 p{
     text-indent: 100px;
