@@ -5,8 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Main-CSS/style_accueil.css"/>
-    <link rel="stylesheet" href="Main-CSS/style.css"/>
+    <link rel="stylesheet" href="Main CSS/style_accueil.css"/>
+    <link rel="stylesheet" href="Main CSS/style.css"/>
     <title>Site web de l'ETIQ</title>
 
 </head>
@@ -14,8 +14,8 @@
 <body>
 
     <header>
-        <h1 id="mainTitle">Etiq</h1>
-        <nav>
+        <h1 id="mainTitle">Etiq</h1><p id="descMainTitle">IUT informatique Dijon</p>
+        <nav class="headerAccueil">
             <ul>
                 <li class="deroulante"><a href="accueil.html" class="menu">Accueil</a></li>
                 
@@ -42,24 +42,29 @@
    
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="corps">
-        <div class="evenement">
-            <div class="elementinfo2">
+    <div class="corpsPage">
+        <div class="bandeDroite">
+            <div class="divSommaire">
                 <h3 class="titre">Sommaire</h3>
                 <ol>
-                    <li><a class="mainSommaire" href="#I">Qu'est-ce que l'ETIQ?</a></li>
-                    <li><a href="#I.1">Qu'est-ce que l'on fait?</a></li>
-                    <li><a href="#I.2">A quoi sert cette association</a></li>
-                    <li><a href="#I.3">Comment devenir membre</a></li>
-                    <li><a class="mainSommaire" href ="#II">Les avantages de l'association</a></li>
-                    <li><a href="#II.1">Aide à la vie étudiante</a></li>
-                    <li><a href="#II.2">Action valorisante pour le diplôme</a></li>
+                    <li><a class="mainElementSommaire" href="#I">Qu'est-ce que l'ETIQ?</a></li>
+                    <div class="sousPartieSommaire">
+                        <li><a class="elementSommaire" href="#I.1">Qu'est-ce que l'on fait?</a></li>
+                        <li><a class="elementSommaire" href="#I.2">A quoi sert cette association?</a></li>
+                        <li><a class="elementSommaire" href="#I.3">Comment devenir membre?</a></li>
+                    </div>
+
+                    <li><a class="mainElementSommaire" href ="#II">Les avantages de l'association</a></li>
+                    <div class="sousPartieSommaire">
+                        <li><a class="elementSommaire" href="#II.1">Aide à la vie étudiante</a></li>
+                        <li><a class="elementSommaire" href="#II.2">Action valorisante pour le diplôme</a></li>
+                    </div>
                 </ol>
             </div>
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-        <div class="elementinfo3">
+        <div class="divActu">
             <h3 class="titre2">Actualité</h3> 
-	        <div class='elementinfo'>
+	        <div class='elementActu'>
 	            <h4>Evenement</h4>
 	            <ul>
 	                <li>Quizz manga disponible sur le <a href="https://www.facebook.com/events/1408499879347369/" class="actualité">facebook</a> de l'ETIQ. Article publié le 9 juillet 2020.</li><br>
@@ -67,14 +72,14 @@
 	            </ul>
                 </div> 
 
-	        <div class='elementinfo'>
+	        <div class='elementActu'>
 	            <h4>Avantages</h4>
 	            <ul>
 	                <li>Adhérer à l'association de l'ETIQ offre de nombreux avanatges pour plus d'information cliquer <a href="Avantages.html" class="actualité">ici</a></li>
 	            </ul>
 	        </div>
 
-	        <div class='elementinfo'>
+	        <div class='elementActu'>
 	            <h4>Forum</h4>
 	            <ul>
 	                <li>Vous avez des question par rapport à l'association? N'hésiter pas à aller faire un tour sur notre <a href="forum.html" class="actualité">Forum</a>.</li><br>
@@ -103,7 +108,7 @@
                 des consoles de jeux, divers jeux de société comme les échecs par exemple !
             </p>
             <div class="sousSousPresentation">
-                <div class="texte">
+                <div class="textePresentation">
                 <h4 id="I.1">Qu'est-ce que l'on fait?</h4>
                 <p>Des évènements y sont régulièrement organisés, comme des sorties au cinéma par exemple ainsi que des soirées à thèmes. 
                     C’est l’association qui gère la soirée d’intégration, à la rentrée.
@@ -117,12 +122,12 @@
                 </p>
                 </div>
                 
-                <div class="texte">
+                <div class="textePresentation">
                 <h4 id="I.2">A quoi sert cette association</h4>
                 <p> ETIQ souhaite favoriser la solidarité et l'entraide entre les anciens et nouveaux étudiants de l'IUT Informatique de Dijon.</p>
                 </div>
 
-                <div class="texte">
+                <div class="textePresentation">
                 <h4 id="I.3">Comment devenir membre</h4>
                 <p>L’inscription coute 5 euros par personne en plus de recevoir une première boisson gratuite. Cet argent sert à financer le matériel 
                     mis à disposition des étudiants qui ont adhéré à l’ETIQ, mais aussi des évènements en tous genres qu’elle organise. Ces évènements 
@@ -143,7 +148,7 @@
             <h3 id="II">Les avantages de l'association</h3>
 
             <div class="sousSousPresentation">
-                <div class="texte">
+                <div class="textePresentation">
                     <h4 id="II.1">Aide à la vie étudiante</h4>
                     <p>
                         L'ETIQ vous offre la possibilité de vous aider dans votre cursus scolaire. Si vous avez des difficultés avec une matière et que vous êtes intéressé par le projet de tutorat, vous pouvez cliquer 
@@ -157,7 +162,7 @@
                     </p>
                     </div>
                     
-                    <div class="texte">
+                    <div class="textePresentation">
                     <h4 id="II.2">Action valorisante pour le diplôme</h4>
                     <p>Devenir membre d'une association vous permetra de profiter du BONUS ETUDIANT. Ce bonus va vous permettre de gagner un pourcentage
                         compris entre 1 et 5 qui va venir s'appliquer à votre moyenne. Cela n'est pas à négliger surtout si vous avez des difficultés
@@ -169,10 +174,10 @@
                 </div>
             </div>
             
-            <div class="navigation">
-                <a href="PolitiqueConfi.html" class="nav2">Confidentialité</a>
-                <a href="Contact.html" class="nav2">Nous contacter</a>
-                <a href="MentionLégale.html" class="nav2">Mention légale</a>
+            <div class="bandeFinPage">
+                <a href="PolitiqueConfi.html" class="elementBandeFinPage">Confidentialité</a>
+                <a href="Contact.html" class="elementBandeFinPage">Nous contacter</a>
+                <a href="MentionLégale.html" class="elementBandeFinPage">Mention légale</a>
             </div>
     </div>
 
