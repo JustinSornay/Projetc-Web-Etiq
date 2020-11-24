@@ -1,0 +1,69 @@
+
+#carte{
+    width: 450px;
+    height: 400px;
+ 
+}
+#locaux{
+    width: 70.8%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px;
+}
+#fb{
+    width: 5%;
+    margin-left: -5px;
+}
+#gmail{
+    width: 3%;
+}
+#coteOr{
+    width: 30%;
+    float: right;
+}
+.presentation{
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 69.5%;
+}
+.texte{
+    background-color: white;
+    width: 68%;
+    
+}
+.carte{
+    background-color: white;
+    width: 28.6%;
+    position: absolute;
+    left: 1125px;
+    height: 1072px;
+}
+.gps{
+    width: 5%;
+    margin-right: 5px;
+}
+.tel{
+    width: 5%;
+    margin-right: 5px;
+}
+.horloge{
+    width: 5%;
+    margin-right: 5px;
+}
+.section{
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.iut{
+    width: 100%;
+    height: 393px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
