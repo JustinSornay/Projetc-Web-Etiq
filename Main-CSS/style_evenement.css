@@ -1,3 +1,5 @@
+header{padding-top: 25px;}
+#mainTitle{bottom: 19px;}
 #etiqlan2{
     float: left;
     width: 295px;
@@ -27,17 +29,11 @@
 .texte{
     margin-right: 20px;
     padding-left: 315px;
-    
-
 }
 #red{
  color:red;
  
  font-weight: bold;
-}
-#mainTitle{
-    padding-top:3px;
-    height: 5px;
 }
 nav{
 padding-top:5px;
