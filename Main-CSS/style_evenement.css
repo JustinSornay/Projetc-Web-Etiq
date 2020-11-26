@@ -1,0 +1,45 @@
+#etiqlan2{
+    float: left;
+    width: 295px;
+    margin-right: 20px;
+}
+#momie{
+    width: 295px;
+    float: left;
+    margin-right: 20px;
+}
+#manga{
+    width: 295px;
+    margin-right: 20px;
+    float: left;
+}
+
+.BoxEvenement{
+    background-color: white;
+    margin: 20px;
+    padding-top: 10px;
+    height: 320px;
+    padding-left:15px;
+    padding-right: 5px;
+    border-radius: 5px;;
+}
+
+.texte{
+    margin-right: 20px;
+    padding-left: 315px;
+    
+
+}
+#red{
+ color:red;
+ 
+ font-weight: bold;
+}
+#mainTitle{
+    padding-top:3px;
+    height: 5px;
+}
+nav{
+padding-top:5px;
+padding-right: 25px;
+}
