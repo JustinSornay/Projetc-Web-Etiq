@@ -1,40 +1,112 @@
-.headerAccueil{
-	position: relative;
-	bottom: 8px;
-	margin-left: 30%;
-	padding: 0 0 20px 0;
+@media (min-width: 1880px) {
+
+.bandeGauche{
+	margin: 0 250px 0 250px;
 }
-
-
+.bandeDroite{
+	padding-right: 140px;
+    width: 290px;
+}
 .corpsPage{
-	margin: 20px;
+	margin: 30px 100px 0 0;
 }
+.bandeFinPage{
+    width: 84.35%;
+}
+.membre{
+    width: 84.35%;
+}}
+
+
+@media (max-width: 1879px) and (min-width: 1750px) {
+
+.bandeGauche{
+	margin: 0 250px 0 200px;
+}
+.bandeDroite{
+	padding-right: 120px;
+    width: 290px;
+}
+.corpsPage{
+	margin: 30px 100px 0 0;
+}
+.bandeFinPage{
+    width: 84.5%;
+}
+.membre{
+    width: 84.5%;
+}}
+
+
+@media (max-width: 1749px) and (min-width: 1610px) {
+
+.bandeGauche{
+	margin: 0 220px 0 150px;
+}
+.bandeDroite{
+	padding-right: 80px;
+    width: 290px;
+}
+.corpsPage{
+	margin: 30px 100px 0 0;
+}
+.bandeFinPage{
+    width: 84.6%;
+}
+.membre{
+    width: 84.6%;
+}}
+
+
+@media (max-width: 1609px) and (min-width: 1480px) {
+
+.bandeGauche{
+	margin: 0 220px 0 125px;
+}
+.bandeDroite{
+	padding-right: 80px;
+    width: 290px;
+}
+.corpsPage{
+	margin: 30px 50px 0 0;
+}
+.bandeFinPage{
+    width: 84.6%;
+}
+.membre{
+    width: 84.6%; 
+}}
+
+
+@media (max-width: 1479px) and (min-width: 1350px) {
+
+.bandeGauche{
+	margin: 0 220px 0 100px;
+}
+.bandeDroite{
+	padding-right: 60px;
+    width: 290px;
+}
+.corpsPage{
+	margin: 30px 50px 0 0;
+}
+.bandeFinPage{
+    width: 84.6%;
+}
+.membre{
+    width: 84.6%;
+}}
+
+
+
 
 
 #carrouselle{
 	position: relative;
-	bottom: 26px;
-	right: 10px;
+	bottom: 15px;
+	right: 8px;
 	background-color: #44546A;
-	padding: 400px 100% 0 100%;
-}
-
-
-.bandeDroite{
-	position: relative;
-    float: right;
-    max-width: 290px;
-    color: #FFFEF4;
-	z-index: 1000;
-}
-.elementActu{
-	position: relative;
-	background-color: #1F2124; 
-	padding: 1px 20px 15px 20px;
-	margin-bottom: 5px; 
-}
-.planning{
-	width: 100%;
+	padding: 400px 105% 0 0;
 }
 
 
@@ -69,7 +141,7 @@
 .Presentation{
 	position: relative;
     background-color: white;
-    width: 82%;
+    width: 82.8%;
     padding: 1px 20px 20px 0;
 }
 .sousPresentation{
@@ -79,7 +151,7 @@
 	margin: 50px 30px 20px 20px;
 }
 .TitrePresentation{
-	color: #F17F42;
+	color: #FFFEF4;
     text-align: center;
     font-size: 2.25em;
 	background-color: #1F2124;
@@ -113,10 +185,12 @@ h4{
 }
 .mainElementSommaire:hover{
 	right: 9px;
+    padding-left: 5px;
 }
 .elementSommaire:hover{
 	position: relative;
-	right: 9px;
+	right: 15px;
+    padding-left: 10px;
 }
 .sousPartieSommaire{
 	position: relative;
@@ -139,30 +213,56 @@ ol li a{
 ol li a:hover{
     font-weight: bold;
     border-left: 4px solid black;
-    padding-left: 5px;
     right: 24px;
+}
+.planning{
+	width: 100%;
 }
 
 
 .membre{
 	position: relative;
 	top: 3px;
-    width: 83.1%;
     margin-top: 17px; 
 }
 
 
+.headerAccueil{
+	position: relative;
+	bottom: 8px;
+}
+.elementBandeFinPage{
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+    float: right;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.bandeGauche{
+	position: relative;
+}
+.bandeDroite{
+	position: relative;
+	float: right;
+    width: 290px;
+    color: white;
+	z-index: 1000;
+}
+.corpsPage{
+	position: absolute;
+}
 .bandeFinPage{
     margin-top: 20px;
     background-color: #1F2124;
-    height: 30px;
-    padding-left: 56%;
     padding-top: 70px;
-    width: 27.1%;
 }
-.elementBandeFinPage{
-    color: white;
-    margin-left: 20px;
-    position: relative;
-    text-decoration: none;
+
+
+.elementActu{
+	position: relative;
+	background-color: #1F2124; 
+	padding: 1px 20px 15px 20px;
+	margin-bottom: 5px; 
 }

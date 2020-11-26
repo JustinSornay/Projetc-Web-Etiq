@@ -4,18 +4,55 @@ body{
     font-family: monospace;
 }
 
+@media (min-width: 1880px) {
+
+header nav{
+	margin: 0 5% 0 30%;
+	padding: 0 0 9px 0;
+}}
+
+@media (max-width: 1879px) and (min-width: 1750px) {
+
+header nav{
+	margin: 0 6% 0 28.5%;
+	padding: 0 0 8px 0;
+}}
+
+@media (max-width: 1749px) and (min-width: 1610px) {
+
+header nav{
+	margin: 0 7% 0 27%;
+	padding: 0 0 7px 0;
+}}
+
+@media (max-width: 1609px) and (min-width: 1480px) {
+
+header nav{
+	margin: 0 8% 0 25.5%;
+	padding: 0 0 6px 0;
+}}
+
+@media (max-width: 1479px) and (min-width: 1350px) {
+
+header nav{
+	margin: 0 9% 0 24%;
+	padding: 0 0 5px 0;
+}}	
 
 header{
     position: relative;
     right: 10px;
     bottom: 15px;
     background-color: white;
-    width: 110%;
+    width: 105.5%;
 }  
 #mainTitle{
 	position: relative;
 	font-size: 3.5em;
 	padding: 10px 20px;
+}
+#mainTitle,#descMainTitle:hover{
+	cursor: default;
 }
 #descMainTitle{
 	position: relative;
@@ -44,9 +81,9 @@ nav a{
 }
 nav a:hover{
     font-weight: bold; 
-    color: #F17F42;
+    color: #F68657;
     text-decoration: none;
-    border-top: 5px solid #F17F42;
+    border-top: 5px solid #F68657;
   	padding-top: 18px; 
 }
 
@@ -55,24 +92,23 @@ nav > ul li:hover .sous{
     display: block;
 }
 .sous li{
-	font-size: 0.7em;
-	padding: 10px 0 10px 0;
+	font-size: 0.75em;
+	padding: 15px 0 15px 0;
 }
 .sous a{
 	position: relative;
 	right: 25px;
 	color: #FFFEF4;
+	font-weight: lighter;
 }
 .sous a:hover{
-    color: #F68657;
+    color: #F17F42;
     border-top: none;
 }
 .sous{
-    display: none;
-    box-shadow: 3px 2px 5px #1F2124;
-    background-color: #1F2124;
     position: absolute;
-    width: 100%;
+	display: none;
+    background-color: #1F2124;
     z-index: 1000;
 }
 .deroulante > a::after{
