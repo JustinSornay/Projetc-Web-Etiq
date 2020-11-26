@@ -10,9 +10,6 @@
 .corpsPage{
 	margin: 30px 100px 0 0;
 }
-.bandeFinPage{
-    width: 84.35%;
-}
 .membre{
     width: 84.35%;
 }}
@@ -29,9 +26,6 @@
 }
 .corpsPage{
 	margin: 30px 100px 0 0;
-}
-.bandeFinPage{
-    width: 84.5%;
 }
 .membre{
     width: 84.5%;
@@ -50,9 +44,6 @@
 .corpsPage{
 	margin: 30px 100px 0 0;
 }
-.bandeFinPage{
-    width: 84.6%;
-}
 .membre{
     width: 84.6%;
 }}
@@ -70,9 +61,6 @@
 .corpsPage{
 	margin: 30px 50px 0 0;
 }
-.bandeFinPage{
-    width: 84.6%;
-}
 .membre{
     width: 84.6%; 
 }}
@@ -89,9 +77,6 @@
 }
 .corpsPage{
 	margin: 30px 50px 0 0;
-}
-.bandeFinPage{
-    width: 84.6%;
 }
 .membre{
     width: 84.6%;
@@ -222,7 +207,7 @@ ol li a:hover{
 
 .membre{
 	position: relative;
-	
+	top: 2px;
      
 }
 
@@ -230,15 +215,6 @@ ol li a:hover{
 .headerAccueil{
 	position: relative;
 	bottom: 8px;
-}
-.elementBandeFinPage{
-    position: relative;
-    bottom: 30px;
-    right: 20px;
-    float: right;
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
 }
 .bandeGauche{
 	position: relative;
@@ -252,11 +228,6 @@ ol li a:hover{
 }
 .corpsPage{
 	position: absolute;
-}
-.bandeFinPage{
-    margin-top: 20px;
-    background-color: #1F2124;
-    padding-top: 70px;
 }
 
 

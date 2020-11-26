@@ -1,7 +1,7 @@
 body{
     background-color: #DBDBDB;
     overflow-x: hidden;
-    font-family: monospace;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;;
 }
 
 @media (min-width: 1880px) {
@@ -9,6 +9,10 @@ body{
 header nav{
 	margin: 0 5% 0 30%;
 	padding: 0 0 9px 0;
+
+}
+.bandeFinPage{
+    width: 84.35%;
 }}
 
 @media (max-width: 1879px) and (min-width: 1750px) {
@@ -16,6 +20,9 @@ header nav{
 header nav{
 	margin: 0 6% 0 28.5%;
 	padding: 0 0 8px 0;
+}
+.bandeFinPage{
+    width: 84.5%;
 }}
 
 @media (max-width: 1749px) and (min-width: 1610px) {
@@ -23,6 +30,9 @@ header nav{
 header nav{
 	margin: 0 7% 0 27%;
 	padding: 0 0 7px 0;
+}
+.bandeFinPage{
+    width: 84.6%;
 }}
 
 @media (max-width: 1609px) and (min-width: 1480px) {
@@ -30,6 +40,9 @@ header nav{
 header nav{
 	margin: 0 8% 0 25.5%;
 	padding: 0 0 6px 0;
+}
+.bandeFinPage{
+    width: 84.6%;
 }}
 
 @media (max-width: 1479px) and (min-width: 1350px) {
@@ -37,6 +50,9 @@ header nav{
 header nav{
 	margin: 0 9% 0 24%;
 	padding: 0 0 5px 0;
+}
+.bandeFinPage{
+    width: 84.6%;
 }}	
 
 header{
@@ -45,6 +61,7 @@ header{
     bottom: 15px;
     background-color: white;
     width: 105.5%;
+    font-family: monospace;
 }  
 #mainTitle{
 	position: relative;
@@ -135,6 +152,8 @@ p{
     text-indent: 100px;
     font-size: 1.1em;
 }
+
+
 .bandeFinPage{
     margin-top: 20px;
     background-color: #1F2124;
