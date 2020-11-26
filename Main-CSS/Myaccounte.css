@@ -85,17 +85,18 @@ a.discrete:hover {
     min-width: 160px;
     border-radius: 24px;
     text-align: center;
-    padding: 15px 40px;
+    padding: 19px 45px;
     margin-top: 15px;
     background-color: #e95c0a !important;
     color: #fff;
-    font-size: 14px;
     margin-left: auto;
+    margin-right: auto;
     font-weight: 600;
     box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, .13);
     border: none;
     transition: all 0.3s ease;
     outline: 0;
+    font-size: 160%;
 }
 
 .btn-submit:hover {
