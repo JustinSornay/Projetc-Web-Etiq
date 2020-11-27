@@ -1,0 +1,77 @@
+.page{
+    margin: 0px  60px 0px 60px;
+    background-color: white;
+    height: 1200px;
+    padding: 20px;
+    border: 2px solid darkblue;
+}
+.menuForum{
+    background-color: #44546A;
+  
+}
+
+.titremenu{
+    background-color: purple;
+    width: 20%;
+    text-align: center;
+    position: relative;
+    left: 600px;
+    top: 20px;
+    
+}
+
+.titremenu2{
+    background-color: purple;
+    width: 20%;
+    text-align: center;
+    position: relative; 
+    left: 1110px;
+    top: -40px;
+}
+.menuParticipants{
+    border: 2px solid orange;
+    width: 25%;
+    height: 1000px;
+    text-align: center;
+}
+.menuDiscussion{
+    border: 2px solid darkred;
+    position: absolute;
+    left: 500px;
+    width: 62.5%;
+    height: 1000px;
+}
+.titreDiscussion{
+    border: 1px solid darkolivegreen;
+    width: 25%;
+}
+.menuEcriture{
+    border: 2px solid black;
+    margin-left: 20px;
+    width: 70%;
+    position: absolute;
+    top: 930px;
+}
+.Envoyer{
+    border: 2px solid darkred;
+    position: absolute;
+    left: 720px;
+    width: 25%;
+    top: 930px;
+}
+.matières{
+    background-color: purple;
+}
+.Informations{
+    background-color: purple;
+    padding: 3px 2px 3px 2px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.flecheretour{
+  position: absolute;
+  width: 3%;
+  left: 1450px;
+}
+
