@@ -148,6 +148,10 @@
    	border-top-left-radius: 17px 13px;
    	border-top-right-radius: 17px 13px;
 }
+.Presentation2{
+	bottom: 4px;
+
+}
 .sousPresentation{
 	margin: 25px 10px 30px 30px;
 }
@@ -230,8 +234,7 @@ ol li a:hover{
 
 .membre{
 	position: relative;
-	top: 3px;
-    margin-top: 17px; 
+
 }
 
 
@@ -259,4 +262,8 @@ ol li a:hover{
 	background-color: #1F2124; 
 	padding: 1px 20px 15px 20px;
 	margin-bottom: 5px; 
+}
+.bandeFinPage{
+	position: relative;
+	bottom: 4px;
 }
