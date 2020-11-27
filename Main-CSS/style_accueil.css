@@ -28,7 +28,7 @@
 	margin: 30px 100px 0 0;
 }
 .membre{
-    width: 84.5%;
+    width: 84.45%;
 }}
 
 
@@ -45,7 +45,7 @@
 	margin: 30px 100px 0 0;
 }
 .membre{
-    width: 84.6%;
+    width: 84.55%;
 }}
 
 
@@ -62,7 +62,7 @@
 	margin: 30px 50px 0 0;
 }
 .membre{
-    width: 84.6%; 
+    width: 84.65%; 
 }}
 
 
@@ -79,10 +79,24 @@
 	margin: 30px 50px 0 0;
 }
 .membre{
-    width: 84.6%;
+    width: 84.75%;
 }}
 
+@media (max-width: 1349px) and (min-width: 1220px) {
 
+.bandeGauche{
+	margin: 0 200px 0 50px;
+}
+.bandeDroite{
+	padding-right: 30px;
+    width: 290px;
+}
+.corpsPage{
+	margin: 30px 30px 0 0;
+}
+.membre{
+    width: 84.85%;
+}}
 
 
 
@@ -101,6 +115,7 @@
 	margin-bottom: 20px;
 }
 .actualité{
+	font-weight: bolder;
     text-decoration: none;
     color: #F17F42;
 }
@@ -122,36 +137,34 @@
    margin-left: 15px;
 }
 
+
 .Presentation,.Presentation2{
-    position: relative;
+	position: relative;
     background-color: white;
     width: 82.8%;
     padding: 1px 20px 20px 0;
 }
 .Presentation{
-       border-top-left-radius: 11px 15px;
-       border-top-right-radius: 11px 15px;
+   	border-top-left-radius: 17px 13px;
+   	border-top-right-radius: 17px 13px;
 }
 .sousPresentation{
-    margin: 25px 10px 30px 30px;
+	margin: 25px 10px 30px 30px;
 }
 .sousSousPresentation{
-    margin: 50px 30px 20px 20px;
+	margin: 50px 30px 20px 20px;
 }
 .TitrePresentation{
-       border-top-left-radius: 12px 15px;
-       border-top-right-radius: 12px 15px;
-       border-bottom-left-radius: 12px 15px;
-       border-bottom-right-radius: 12px 15px;
-    color: #FFFEF4;
+   	border-radius: 7px;
+	color: #FFFEF4;
     text-align: center;
     font-size: 2.05em;
-    background-color: #1F2124;
-    padding: 40px 0 40px 0;
-    font-style: italic;
+	background-color: #1F2124;
+	padding: 40px 0 40px 0;
+	font-style: italic;
 }
-
 #I,#II{
+	padding-top: 5px;
 	text-decoration: overline;
 }
 h4{
@@ -159,9 +172,11 @@ h4{
     text-align: left;
     font-size: 1.35em;
 }
+.elementActu h4{color: #FFFEF4}
 .textePresentation{
     border-left: 4px solid #1F2124;
-    padding-left: 40px;
+    padding: 0 40px 5px 40px;
+    background-color: ;
 }
 
 
@@ -210,14 +225,13 @@ ol li a:hover{
 }
 .planning{
 	width: 100%;
-	height: 500px;
 }
 
 
 .membre{
 	position: relative;
-	top: 2px;
-     
+	top: 3px;
+    margin-top: 17px; 
 }
 
 

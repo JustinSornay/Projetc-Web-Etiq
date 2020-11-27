@@ -7,9 +7,10 @@ body{
 @media (min-width: 1880px) {
 
 header nav{
-	margin: 0 5% 0 30%;
-	padding: 0 0 9px 0;
-
+	margin: 0 5% 0 29.5%;
+}
+nav ul li{
+    margin: 0 5.5% 0 5.5%;
 }
 .bandeFinPage{
     width: 84.35%;
@@ -18,8 +19,10 @@ header nav{
 @media (max-width: 1879px) and (min-width: 1750px) {
 
 header nav{
-	margin: 0 6% 0 28.5%;
-	padding: 0 0 8px 0;
+	margin: 0 6% 0 30.5%;
+}
+nav ul li{
+    margin: 0 5% 0 5%;
 }
 .bandeFinPage{
     width: 84.5%;
@@ -28,32 +31,51 @@ header nav{
 @media (max-width: 1749px) and (min-width: 1610px) {
 
 header nav{
-	margin: 0 7% 0 27%;
-	padding: 0 0 7px 0;
+	margin: 0 7% 0 31.5%;
+}
+nav ul li{
+    margin: 0 4.5% 0 4.5%;
 }
 .bandeFinPage{
-    width: 84.6%;
+    width: 84.65%;
 }}
 
 @media (max-width: 1609px) and (min-width: 1480px) {
 
 header nav{
-	margin: 0 8% 0 25.5%;
-	padding: 0 0 6px 0;
+	margin: 0 8% 0 32.5%;
+}
+nav ul li{
+    margin: 0 4% 0 4%;
 }
 .bandeFinPage{
-    width: 84.6%;
+    width: 84.8%;
 }}
 
 @media (max-width: 1479px) and (min-width: 1350px) {
 
 header nav{
-	margin: 0 9% 0 24%;
-	padding: 0 0 5px 0;
+	margin: 0 9% 0 33.5%;
+}
+nav ul li{
+    margin: 0 3.5% 0 3.5%;
 }
 .bandeFinPage{
-    width: 84.6%;
+    width: 84.95%;
 }}	
+
+@media (max-width: 1349px) and (min-width: 1220px) {
+
+header nav{
+	margin: 0 10% 0 34.5%;
+}
+nav ul li{
+    margin: 0 3% 0 3%;
+}
+.bandeFinPage{
+    width: 85.1%;
+}}	
+
 
 header{
     position: relative;
@@ -63,10 +85,16 @@ header{
     width: 105.5%;
     font-family: monospace;
 }  
+.logoETIQ{
+	position: absolute;
+	top: 5px;
+	left: 20px;
+	width: 70px;
+}
 #mainTitle{
 	position: relative;
 	font-size: 3.5em;
-	padding: 10px 20px;
+	padding: 10px 100px;
 }
 #mainTitle,#descMainTitle:hover{
 	cursor: default;
@@ -74,7 +102,7 @@ header{
 #descMainTitle{
 	position: relative;
 	top: 40px;
-	right: 100px;
+	right: 175px;
 	font-style: italic;
 	opacity: 0.75;
 }
@@ -88,7 +116,6 @@ nav ul li{
 	display: inline-block;
     font-size: 1.5em;
     position: relative;
-    margin: 0 5.5% 0 5.5%;
 }
 nav a{
     color: black;    
@@ -167,4 +194,7 @@ p{
     color: white;
     margin-left: 20px;
     text-decoration: none;
+}
+.elementBandeFinPage:hover{
+	color: #F68657;
 }
