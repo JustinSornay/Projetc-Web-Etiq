@@ -1,41 +1,15 @@
-
 #carte{
-    width: 450px;
-    height: 400px;
- 
-}
-#locaux{
-    width: 70.8%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 500px;
-}
-#fb{
-    width: 5%;
-    margin-left: -5px;
-}
-#gmail{
-    width: 3%;
+    width: 100%;
+    height: 400px;    
 }
 #coteOr{
     width: 30%;
     float: right;
 }
-.presentation{
-    background-color: white;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 69.5%;
-}
-.texte{
-    background-color: white;
-    width: 68%;
-    
-}
+
+
 .carte{
     background-color: white;
-    width: 28.6%;
     position: absolute;
     left: 1125px;
     height: 1040px;
@@ -66,4 +40,81 @@ ul{
 a{
     text-decoration: none;
     color: black;
+}
+
+
+.corps{
+    padding: 20px 10% 0 10%;
+}
+.bandeDroite{
+    position: relative;
+    margin-left: -150px;
+}
+.bandeGauche{
+    position: relative;
+    width: 85%; 
+}
+.presentation,.presentation2{
+    position: relative;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 69.5%;
+}
+.presentation{
+    border-top-left-radius: 17px 13px;
+    border-top-right-radius: 17px 13px;
+}
+.presentation2{
+    bottom: 5px;
+}
+#locaux{
+    width: 71.1%;
+    height: 500px;
+}
+.bandeFinPage{
+    width: 71.1%;
+}
+
+
+.reseaux{
+    position: relative;
+    top: 15px;
+}
+.reseaux1,.reseaux2{
+    position: relative;
+    display: inline-block;
+    font-weight: bolder;
+}
+.reseaux1{
+    bottom: 10px;
+    text-indent: 10px;
+}
+.reseaux2{
+    bottom: 7px;
+    left: 3px;
+    text-indent: 15px;
+}
+.reseaux1:hover,.reseaux2:hover{
+    color: #F17F42;
+}
+#fb{
+    width: 40px;
+    margin-left: -5px;
+}
+#gmail{
+    position: relative;
+    left: 2px;
+    width: 26px;
+}
+
+
+h2{
+    text-align: center;
+    background-color: #1F2124;
+    color: #FFFEF4;
+    margin: 0.25% 10% 0 10%;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
 }
