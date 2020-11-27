@@ -1,5 +1,3 @@
-header{padding-top: 25px;}
-#mainTitle{bottom: 19px;}
 #etiqlan2{
     float: left;
     width: 295px;
@@ -34,8 +32,4 @@ header{padding-top: 25px;}
  color:red;
  
  font-weight: bold;
-}
-nav{
-padding-top:5px;
-padding-right: 25px;
 }
