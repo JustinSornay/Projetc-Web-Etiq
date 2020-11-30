@@ -1,0 +1,24 @@
+.BoxTexte{
+    position: relative;
+    background-color: white;
+    width: 82.8%;
+    padding: 1px 20px 20px 0;
+    border-radius: 17px 13px;
+    margin: 25px 10px 30px 100px;
+}
+.texte{
+        border-left: 4px solid #1F2124;
+        padding: 0 40px 5px 40px;
+        margin: 50px 30px 20px 20px;
+}
+.presentation{
+    text-align: center;
+}
+h2.titrepartie{
+    width: 80%;
+    margin-top: 10px;
+}
+.bandeFinPage{
+    margin-left: 100px;
+    width: 86.4%;
+}

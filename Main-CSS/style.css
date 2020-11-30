@@ -1,7 +1,7 @@
 body{
     background-color: #DBDBDB;
     overflow-x: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;  
 }
 
 @media (min-width: 1880px) {
@@ -76,6 +76,20 @@ nav ul li{
     width: 85.1%;
 }}	
 
+@media (max-width: 1219px) and (min-width: 1090px) {
+
+header nav{
+	margin: 0 0% 0 37.5%;
+	font-size: 0.85em;
+	padding-bottom: 15px;
+}
+nav ul li{
+    margin: 0 2.75% 0 2.75%;
+}
+.bandeFinPage{
+    width: 85.25%;
+}}	
+
 
 header{
     position: relative;
@@ -124,11 +138,11 @@ nav a{
     padding: 2px 7px 5px 7px;
 }
 nav a:hover{
-    font-weight: bold; 
+    font-weight: bold;
     color: #F68657;
     text-decoration: none;
     border-top: 5px solid #F68657;
-  	padding-top: 18px; 
+  	padding-top: 17px;
 }
 
 
@@ -197,4 +211,31 @@ p{
 }
 .elementBandeFinPage:hover{
 	color: #F68657;
+}
+.page2{
+    background-color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 75%;
+    border-radius: 7px;
+    padding: 5px 0px 5px 0px;
+}
+.titrepartie{
+    background-color: #F68657;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 7px;
+}
+.partie{
+    margin: 20px;
+   
+}
+.souspartie{
+    border-left: 4px solid black;
+    padding-left: 10px;
+}
+.lien{
+    color: #F17F42;
+    text-decoration: none
 }
