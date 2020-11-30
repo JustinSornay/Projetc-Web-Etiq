@@ -18,7 +18,7 @@ if($insertPdo){
   $message = 'REUSSI';
 }
 else {
-  $message = 'go te suicider';
+  $message = 'ECHEC';
 }
 ?>
 
@@ -29,5 +29,6 @@ else {
 <body>
   <h1>Insertion de l'utilisateur</h1>
   <p><?php echo $message ;?></p>
+  <meta http-equiv="refresh" content="0; URL=../login.html">
 </body>
 </html>

@@ -38,11 +38,11 @@ else {
 <html>
 <head>
   <title>Insertion de la ligne</title>
-  <?php  echo '<meta http-equiv="refresh" content="0; URL=lire_sujet.php?IdTopic=', $Info_Topic['IdTopic'], '">' ?>
 </head>
 
 <body>
   <h1>Insertion du message</h1>
   <p><?php echo $message ;?></p>
+  <meta http-equiv="refresh" content="0; URL=lire_sujet.php?IdTopic=', $Info_Topic['IdTopic'], '">
 </body>
 </html>
