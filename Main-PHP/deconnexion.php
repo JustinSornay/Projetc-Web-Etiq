@@ -8,7 +8,7 @@
 <head>
 <title>Redirection en HTML</title>
 
-<meta http-equiv="refresh" content="0; URL=Login.html">
+<meta http-equiv="refresh" content="0; URL=../Login.html">
 </head>
 
 <body>

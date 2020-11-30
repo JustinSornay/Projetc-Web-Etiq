@@ -16,7 +16,7 @@ if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) {
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-    <link href="Myaccounte.css" rel="stylesheet" type="text/css">
+    <link href="../Main-CSS/Myaccounte.css" rel="stylesheet" type="text/css">
 	<title>Myaccounte</title>
 </head>
 <body>
@@ -24,6 +24,8 @@ if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) {
 	<div class="left">
 		<h1>ETIQ</h1> <!-- Titre a gauche -->   <!--texte paragraphe -->
 		<p>Bienvenue sur le site web de l'Etiq.</br> Cette plateforme a pour objectif de regrouper</br> les informations de l'association. Elle comprend de nombreuses informations ainsi q'un espace d'échange pour ces membres.</p>
+
+      <a href="deconnexion.php"> <button style="font-size: 15px;" class="btn-join" id="test" type="button">Se déconnecter</button> </a>
 
 	</div>
 	<div class="form-login">
