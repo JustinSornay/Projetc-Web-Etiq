@@ -1,49 +1,15 @@
-body{
-    background-color:#b9b7b7;
+#descMainTitle{
+	padding: 0;
 }
-
-/*titre*/
-h1
-{
-    margin: 20px;                                                   
-    text-align :center;
-    font-size : 2em;
-    color: black;
-    margin-bottom: 0em;
+.souspartie{
+	margin: 50px 30px 30px 30px;
 }
-
-h2
-{
-    border-bottom: 1.8px solid rgb(243, 143, 12);
-    font-size :1.5em;
-    color:black;
+.titre{
+	padding: 10px 15px 10px 15px;
+	font-weight: lighter;
+	font-size: 1.5em;
+	margin-bottom: 40px;
 }
-
-h3
-{
-    color: rgb(250, 105, 8);
-    font-size: 1.3em;
-    text-indent:10px;
-    font-weight: bold;
-}
-
-.sub_h1
-{
-    text-align: center;
-    color: #8c0000;
-    font-style: italic;
-    font-size: 1.6em;
-    margin-left: 0.2em;
-}
-/*liens*/
-
 p{
-   color: black;
-   font-family: var;
-   font-size :1.02em; 
-}
-
-.menu{
-    position: relative;
-    bottom: 7px;
+	padding: 10px 20px 0 30px;
 }
