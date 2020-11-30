@@ -16,12 +16,12 @@
 
 .BoxEvenement{
     background-color: white;
-    margin: 20px;
     padding-top: 10px;
     height: 320px;
     padding-left:15px;
     padding-right: 5px;
-    border-radius: 5px;;
+    border-radius: 5px;
+    margin: 30px 100px 0 100px;
 }
 
 .texte{
@@ -32,4 +32,8 @@
  color:red;
  
  font-weight: bold;
+}
+.bandeFinPage{
+    margin-left: 100px;
+    width: 87.3%;
 }
