@@ -89,7 +89,7 @@
 }
 
 
-.titreTopic,.titreDiscussion{
+.titreTopic,.titreDiscussion,.titreTopic2{
     font-family: monospace;
 }
 
@@ -100,12 +100,18 @@
     height: 1002px;
     text-align: center;  
 }
+.titreTopic,.titreTopic2{
+    padding-bottom: 20px;
+    color: black;  
+}
 .titreTopic{
-    position: relative;
     text-decoration: overline;
     font-size: 1.65em;
-    padding-bottom: 20px;
-    color: black;
+}
+.titreTopic2{
+    position: relative;
+    bottom: 10px;
+    font-size: 1.5em;
 }
 .Topic a{
     font-size: 1.1em;
@@ -131,15 +137,18 @@ ol{
     list-style: none;
     margin-left:-40px ;
 }
+.participant1,.participant2{
+    position: relative;
+    bottom: 40px;
+    padding: 10px 10px 10px 10px;;
+    font-size: 1.1em;
+    width: 91%;
+}
 .participant1{
-background-color: rgb(20, 20, 20);
-color: #F68657;
-padding: 10px 10px 10px 10px;;
-font-size: 2em;
+    background-color: rgb(20, 20, 20);
+    color: #F68657;
 }
 .participant2{
-background-color : rgb(48, 49, 49);  
-color: white;
-padding: 10px 10px 10px 10px;
-font-size: 2em;
+    background-color : rgb(48, 49, 49);  
+    color: white;
 }
