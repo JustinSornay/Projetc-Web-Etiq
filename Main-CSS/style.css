@@ -90,11 +90,25 @@ nav ul li{
     width: 85.25%;
 }}	
 
+@media (max-width: 1219px) and (min-width: 1090px) {
+
+header nav{
+    margin: 0 0% 0 37.5%;
+    font-size: 0.85em;
+    padding-bottom: 15px;
+}
+nav ul li{
+    margin: 0 2.75% 0 2.75%;
+}
+.bandeFinPage{
+    width: 85.25%;
+}}  
+
 
 header{
     position: relative;
     right: 10px;
-    bottom: 15px;
+    bottom: 17px;
     background-color: white;
     width: 105.5%;
     font-family: monospace;
@@ -121,15 +135,13 @@ header{
 	opacity: 0.75;
 }
 nav{
-	position: relative;
-	bottom: 8px;
-	margin-left: 30%;
-	padding: 0 0 9px 0;
+	padding-bottom: 9px;
 }
 nav ul li{
+    position: relative;
+    bottom: 6px;
 	display: inline-block;
     font-size: 1.5em;
-    position: relative;
 }
 nav a{
     color: black;    
@@ -141,8 +153,8 @@ nav a:hover{
     font-weight: bold;
     color: #F68657;
     text-decoration: none;
-    border-top: 5px solid #F68657;
-  	padding-top: 17px;
+    border-top: 4px solid #F68657;
+  	padding-top: 16px;
 }
 
 
@@ -184,14 +196,15 @@ h1{
 }
 h2{
     color: #1F2124;
-    font-size: 2.25em;
+    font-size: 2.5em;
+    font-family: monospace;
 }  
 h3{
-    font-size: 1.6em;
+    font-size: 1.55em;
 }
 p{
     text-indent: 100px;
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 
 
@@ -211,31 +224,4 @@ p{
 }
 .elementBandeFinPage:hover{
 	color: #F68657;
-}
-.page2{
-    background-color: white;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 75%;
-    border-radius: 7px;
-    padding: 5px 0px 5px 0px;
-}
-.titrepartie{
-    background-color: #F68657;
-    margin: auto;
-    width: 50%;
-    text-align: center;
-    border-radius: 7px;
-}
-.partie{
-    margin: 20px;
-   
-}
-.souspartie{
-    border-left: 4px solid black;
-    padding-left: 10px;
-}
-.lien{
-    color: #F17F42;
-    text-decoration: none
 }
