@@ -41,6 +41,16 @@ if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) {
 				<li>Année  : <?php if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) { echo $Info_User['Annee']; }else { echo "Connecté vous !";} ?></li>
 				<li>Classe : <?php if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) { echo $Info_User['Classe']; }else { echo "Connecté vous !";} ?></li>
 				<li>Groupe : <?php if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) { echo $Info_User['Groupe']; }else { echo "Connecté vous !";} ?></li>
+
+        <?php
+        if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) {
+          if ($Info_User['Rang'] == 'Admin') { ?>
+              <li><a href="administration.php">Gestion Admin</li>
+        <?php  }else {
+        }
+      }
+         ?>
+
 			</ul>
 		</div>
 	</div>
