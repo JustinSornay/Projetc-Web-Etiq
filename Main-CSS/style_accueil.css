@@ -98,6 +98,36 @@
     width: 84.85%;
 }}
 
+@media (max-width: 1219px) and (min-width: 1190px) {
+
+.bandeGauche{
+  margin-right: 180px;
+}
+.bandeDroite{
+    width: 290px;
+}
+.corpsPage{
+  margin: 30px 15px 0 0;
+}
+.membre{
+    width: 84.95%;
+}}
+
+@media (max-width: 1189px) and (min-width: 1060px) {
+
+.bandeGauche{
+  margin-right: 180px;
+}
+.bandeDroite{
+    width: 290px;
+}
+.corpsPage{
+  margin: 30px;
+}
+.membre{
+    width: 85.05%;
+}}
+
 .divActu{
 	background-color: white; 
 	padding: 1px 0 15px 0;
