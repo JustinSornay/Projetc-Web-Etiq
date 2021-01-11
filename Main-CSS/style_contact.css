@@ -1,3 +1,46 @@
+@media (min-width: 1880px) {
+
+    .bandeDroite{
+        margin-left: -185px;
+    }}
+    
+    @media (max-width: 1879px) and (min-width: 1750px) {
+    
+    .bandeDroite{
+        margin-left: -240px;
+    }}
+    
+    @media (max-width: 1749px) and (min-width: 1610px) {
+    
+    .bandeDroite{
+        margin-left: -295px;
+    }}
+    
+    @media (max-width: 1609px) and (min-width: 1480px) {
+    
+    .bandeDroite{
+        margin-left: -350px;
+    }}
+    
+    @media (max-width: 1479px) and (min-width: 1350px) {
+
+    .bandeDroite{
+        margin-left: -405px;
+    }}
+    
+    @media (max-width: 1349px) and (min-width: 1220px) {
+    
+    .bandeDroite{
+        margin-left: -460px;
+    }}
+    
+    @media (max-width: 1219px) and (min-width: 1090px) {
+    
+    .bandeDroite{
+        margin-left: -515px;
+    }}
+
+
 #carte{
     width: 100%;
     height: 400px;    
@@ -48,7 +91,6 @@ a{
 }
 .bandeDroite{
     position: relative;
-    margin-left: -150px;
 }
 .bandeGauche{
     position: relative;
