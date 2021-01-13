@@ -7,30 +7,6 @@
 }
 
 
-.titremenu{
-    position: relative;
-    font-weight: bolder;
-    background-color: #1F2124;
-    border-radius: 3px;
-    padding: 20px 40% 20px 40%;
-    margin-bottom: 20px;
-}
-.titremenu a{   
-    position: relative;
-    color: #FFFEF4;
-    text-decoration: none;
-    font-size: 2.35em;
-    font-family: monospace;
-    right: 50%;
-}
-.titrelien2{
-    left: 100%;
-}
-.titrelien:hover,.titrelien2:hover{ 
-    color: #F68657;
-}
-
-
 .menuDiscussion{
     border-radius: 4px;
     border: 3px solid black;
@@ -59,18 +35,41 @@
     text-align: center;
 }
 .menuEcriture,.Envoyer{ 
-    height: 25px;
-    border-radius: 5px;
+    border-radius: 3px;
+    height: 30px;
+}
+.floating-label{
+    text-align: center;
+    position: relative;
+    top: 845px;
+}
+.floating-label_message{
+    text-align: center;
+    position: relative;
+    top: 830px;
+}
+.menuEcriture,.menuEcriture_message{
+    border: 2px solid black;
+    background-color: #FFFEF4;
+    color: black;
 }
 .menuEcriture{
-    border: 2px solid black;
-    background-color: #1F2124;
-    color: #FFFEF4;
-    width: 66%;
+    width: 40%;
 }
-.Envoyer{
+.menuEcriture_message{
+    width: 70%;
+}
+.menuEcriture_message,.Envoyer_message{
+    border-radius: 3px;
+    height: 50px;
+}
+
+.Envoyer_message{
+    position: relative;
+    bottom: 20px;
+}
+.Envoyer_message,.Envoyer{
     margin-left: 15px;
-    text-align: center;
     border: 2px solid black;
     background-color: #1F2124;
     margin-left: 2.5%;
@@ -78,7 +77,7 @@
     font-weight: bolder;
     width: 15%;
 }
-.Envoyer:hover{
+.Envoyer_message:hover,.Envoyer:hover{
     cursor: pointer;
     color: #1F2124;
     background-color: #FFFEF4;
@@ -95,7 +94,8 @@
     border: 2px solid black;
     width: 20%;
     height: 1002px;
-    text-align: center;  
+    text-align: center;
+    background-color: #FFFEF4;  
 }
 .titreTopic,.titreTopic2{
     padding-bottom: 20px;
@@ -132,19 +132,20 @@
 
 ol{
     list-style: none;
-    margin-left: -40px;
+    margin-left: -42px;
 }
 .participant1,.participant2{
     position: relative;
+    border: rgb(48, 49, 49) solid 2px;
     bottom: 20px;
-    padding: 10px 10px 10px 10px;;
+    padding: 7px 10px 7px 10px;
     font-size: 1.1em;
 }
-.participant1{
-    background-color: rgb(20, 20, 20);
-    color: #F68657;
-}
 .participant2{
-    background-color : rgb(48, 49, 49);  
-    color: white;
+    background-color : rgb(48, 49, 49);
+    color: #FFFEF4;
+}
+.participant1{
+    background-color: whitesmoke; 
+    color: rgb(20, 20, 20);
 }
