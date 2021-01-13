@@ -64,13 +64,6 @@ $Nb_Topic = $Req_Nb_Topic->execute();                                         //
 
     <div class="page">
 
-        <div class="menuForum">
-
-            <div class="titremenu">
-                <a href="forum.php" class="titrelien">Forum</a>
-            </div>
-        </div>
-
         <div class="menuDiscussion">
 
             <h3 class="titreDiscussion">Créations Topics</h3>
@@ -80,11 +73,11 @@ $Nb_Topic = $Req_Nb_Topic->execute();                                         //
                         <form action="InsérerTopic.php" method="get" accept-charset="utf-8">                                  <!--                                 -->
                           <div class="floating-label">                                                                        <!--                                 -->
                                                                                                                               <!--                                 -->
-                              <input class="menuEcriture" placeholder="Nom du Topic" type="text" name="NomTopic"  required>   <!--                                 -->
-                                                                                                                              <!-- Formulaire pour créer une Topic -->
+                              <input class="menuEcriture" placeholder="Nom du Topic" type="text" name="NomTopic" required>   <!--                                 -->
+                              <button class="Envoyer" type="submit">Envoyer</button>                                                                                                 <!-- Formulaire pour créer une Topic -->
                                                                                                                               <!--                                 -->
                           </div>                                                                                              <!--                                 -->
-                            <button class="Envoyer" type="submit">Envoyer</button>                                            <!--                                 -->
+                                                                       <!--                                 -->
                           </form>                                                                                             <!--                                 -->
                                                                                                                               <!--                                 -->
             <?php }else {                                                                                                     //                                   //

@@ -22,7 +22,6 @@ $Req_Mess_User_Create = $pdo->prepare('SELECT Nom, Prenom FROM Personne Where Id
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum écrire</title>
     <link rel="stylesheet" href="../Main-CSS/style_forum.css"/>
-    <link rel="stylesheet" href="../Main-CSS/style_forum_écrire.css"/>
     <link rel="stylesheet" href="../Main-CSS/style.css"/>
 </head>
 <body>
@@ -81,11 +80,10 @@ $Req_Mess_User_Create = $pdo->prepare('SELECT Nom, Prenom FROM Personne Where Id
                                                                                                                                      <!--                                 -->
                   <?php echo '<form action="PosteMess.php?IdTopic=', $_GET['IdTopic'], '"  method="post">'; //Afficache des Topics ?><!--                                 -->
                 <!--<form action="PosteMess.php" method="post"> -->                                                                  <!--                                 -->
-                                                                                                                                     <!--                                 -->
-                  <textarea name="Message" class="menuEcriture" cols="50" rows="1"></textarea>                                                           <!--                                 -->
-                            <br />                                                                                                       <!--        Envoyer un message       -->
-                  <button class="Envoyer" type="submit">Envoyer</button>                                                          <!--                                 -->
-                                                                                                                                     <!--                                 -->
+                    <div class="floating-label_message">                                                                                                                   <!--                                 -->
+                        <textarea name="Message" class="menuEcriture_message" cols="50" rows="1"></textarea>                                                           <!--                                 -->                                                                                                       <!--        Envoyer un message       -->
+                        <button class="Envoyer_message" type="submit">Envoyer</button>                                                          <!--                                 -->
+                    </div>                                                                                                                     <!--                                 -->
                 </form>                                                                                                             <!--                                 -->
                                                                                                                                      <!--                                 -->
                 <?php }else {                                                                                                        //                                   //
