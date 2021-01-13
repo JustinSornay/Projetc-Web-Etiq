@@ -1,45 +1,44 @@
 @media (min-width: 1880px) {
 
     .bandeDroite{
-        margin-left: -185px;
+        margin-left: -160px;
     }}
     
-    @media (max-width: 1879px) and (min-width: 1750px) {
+    @media (max-width: 1880px) and (min-width: 1750px) {
     
     .bandeDroite{
-        margin-left: -240px;
+        margin-left: -220px;
     }}
     
-    @media (max-width: 1749px) and (min-width: 1610px) {
+    @media (max-width: 1750px) and (min-width: 1610px) {
     
     .bandeDroite{
-        margin-left: -295px;
+        margin-left: -280px;
     }}
     
-    @media (max-width: 1609px) and (min-width: 1480px) {
+    @media (max-width: 1610px) and (min-width: 1480px) {
     
     .bandeDroite{
-        margin-left: -350px;
+        margin-left: -340px;
     }}
     
-    @media (max-width: 1479px) and (min-width: 1350px) {
+    @media (max-width: 1480px) and (min-width: 1350px) {
 
     .bandeDroite{
-        margin-left: -405px;
+        margin-left: -400px;
     }}
     
-    @media (max-width: 1349px) and (min-width: 1220px) {
+    @media (max-width: 1350px) and (min-width: 1220px) {
     
     .bandeDroite{
         margin-left: -460px;
     }}
     
-    @media (max-width: 1219px) and (min-width: 1090px) {
+    @media (max-width: 1220px) and (min-width: 1090px) {
     
     .bandeDroite{
-        margin-left: -515px;
+        margin-left: -520px;
     }}
-
 
 #carte{
     width: 100%;
