@@ -16,7 +16,7 @@ nav ul li{
     width: 84.35%;
 }}
 
-@media (max-width: 1879px) and (min-width: 1750px) {
+@media (max-width: 1880px) and (min-width: 1750px) {
 
 header nav{
 	margin: 0 6% 0 30.5%;
@@ -28,7 +28,7 @@ nav ul li{
     width: 84.5%;
 }}
 
-@media (max-width: 1749px) and (min-width: 1610px) {
+@media (max-width: 1750px) and (min-width: 1610px) {
 
 header nav{
 	margin: 0 7% 0 31.5%;
@@ -40,7 +40,7 @@ nav ul li{
     width: 84.65%;
 }}
 
-@media (max-width: 1609px) and (min-width: 1480px) {
+@media (max-width: 1610px) and (min-width: 1480px) {
 
 header nav{
 	margin: 0 8% 0 32.5%;
@@ -52,7 +52,7 @@ nav ul li{
     width: 84.8%;
 }}
 
-@media (max-width: 1479px) and (min-width: 1350px) {
+@media (max-width: 1480px) and (min-width: 1350px) {
 
 header nav{
 	margin: 0 9% 0 33.5%;
@@ -64,10 +64,12 @@ nav ul li{
     width: 84.95%;
 }}	
 
-@media (max-width: 1349px) and (min-width: 1220px) {
+@media (max-width: 1350px) and (min-width: 1220px) {
 
 header nav{
-	margin: 0 10% 0 34.5%;
+    margin: 0 10% 0 34.5%;
+	font-size: 0.925em;
+	padding-bottom: 10px;
 }
 nav ul li{
     margin: 0 3% 0 3%;
@@ -76,7 +78,7 @@ nav ul li{
     width: 85.1%;
 }}	
 
-@media (max-width: 1219px) and (min-width: 1090px) {
+@media (max-width: 1220px) and (min-width: 1090px) {
 
 header nav{
 	margin: 0 0% 0 37.5%;
