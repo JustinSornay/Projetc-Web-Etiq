@@ -14,11 +14,10 @@
 .presentation{
     text-align: center;
 }
-h2.titrepartie{
+.titrepartie{
     width: 80%;
-    margin-top: 10px;
+    margin: 20px 0 30px 50px;
 }
 .bandeFinPage{
-    margin-left: 100px;
-    width: 86.4%;
+    margin-left: 95px;
 }
