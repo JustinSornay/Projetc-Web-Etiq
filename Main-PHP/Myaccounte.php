@@ -44,7 +44,7 @@ if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) {
 
         <?php
         if (isset($_SESSION['IdAdherent']) AND $_SESSION['IdAdherent'] > 0) {
-          if ($Info_User['Rang'] == 'Admin') { ?>
+          if (($Info_User['Rang'] == 'Admin') OR ($Info_User['Rang'] == 'Moderateur')) { ?>
               <li><a href="administration.php">Gestion Admin</li>
         <?php  }else {
         }

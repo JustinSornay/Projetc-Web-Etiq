@@ -38,7 +38,7 @@ $Nb_Topic = $Req_Nb_Topic->execute();                                         //
         <h1 id="mainTitle">Etiq</h1><p id="descMainTitle">IUT informatique Dijon</p>
         <nav class="headerAccueil">
             <ul>
-                <li class="deroulante"><a href="../accueil.html" class="menu">Accueil</a></li>
+                <li class="deroulante"><a href="/Main-PHP/accueil.php" class="menu">Accueil</a></li>
                 <li class="deroulante"><a href="Forum.php" class="menu">Forum</a>
 
                 </li>

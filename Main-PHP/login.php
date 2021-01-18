@@ -15,10 +15,11 @@ include 'Connecbdd.php';
     $_SESSION['IdAdherent'] = $resultat['IdAdherent'];
     $_SESSION['Mail'] = $Mail;
       echo "Vous êtes connecté !";
-      echo '<meta http-equiv="refresh" content="0; URL=../Accueil.html">';
+      echo '<meta http-equiv="refresh" content="0; URL=Accueil.php">';
     }
   else {
     echo "Mauvais identifiant ou mot de passe !";
+    echo '<meta http-equiv="refresh" content="0; URL=../login.html">';
   }
 
 

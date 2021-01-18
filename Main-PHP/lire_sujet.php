@@ -6,12 +6,21 @@ include 'Connecbdd.php';
 
 //$sql = 'SELECT Message, IdPoste, HeurePoste FROM postemess WHERE IdTopic= $IdTopic';
 
+$Req_Nom_Topic = $pdo->prepare('SELECT NomTopic FROM topic WHERE IdTopic= ?');
+$Req_Nom_Topic->execute(array($_GET['IdTopic']));
+$Nom_Topic =$Req_Nom_Topic->fetch();
+
 $Req_Info_Topic_Mess = $pdo->prepare('SELECT * FROM postemess WHERE IdTopic= ? ORDER BY HeurePoste DESC');
 $Req_Info_Topic_Mess->execute(array($_GET['IdTopic']));
 //$Info_Topic = $Req_Info_Topic_Mess->fetch();
 
 $Req_Mess_User_Create = $pdo->prepare('SELECT Nom, Prenom FROM Personne Where IdAdherent = ?');  //Récupération de qui a créé le Message
 //$Req_Mess_User_Create->execute(array($Info_Topic['IdAdherent']));
+
+$Req_NbParticipant_Topic = $pdo->prepare('SELECT DIstinct IdAdherent, nom, prenom FROM postemess NATURAL JOIN personne WHERE IdTopic= ? ORDER BY HeurePoste Desc');
+$Req_NbParticipant_Topic->execute(array($_GET['IdTopic']));
+//$Info_Topic = $Req_Info_Topic_Mess->fetch();
+
 
  ?>
 
@@ -22,6 +31,7 @@ $Req_Mess_User_Create = $pdo->prepare('SELECT Nom, Prenom FROM Personne Where Id
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum écrire</title>
     <link rel="stylesheet" href="../Main-CSS/style_forum.css"/>
+    <link rel="stylesheet" href="../Main-CSS/style_forum_écrire.css"/>
     <link rel="stylesheet" href="../Main-CSS/style.css"/>
 </head>
 <body>
@@ -30,13 +40,13 @@ $Req_Mess_User_Create = $pdo->prepare('SELECT Nom, Prenom FROM Personne Where Id
         <h1 id="mainTitle">Etiq</h1><p id="descMainTitle">IUT informatique Dijon</p>
         <nav class="headerAccueil">
             <ul>
-                <li class="deroulante"><a href="../accueil.html" class="menu">Accueil</a></li>
+                <li class="deroulante"><a href="accueil.php" class="menu">Accueil</a></li>
 
                 <li class="deroulante"><a href="Forum.php" class="menu">Forum</a>
 
                 </li>
 
-                <li><a href="../Accueil.html">Etiq ▼</a>
+                <li><a href="Accueil.php">Etiq ▼</a>
                     <ul class="sous">
                         <li><a href="../Evenement.html" class="menu">Evenement</a></li>
                         <li><a href="../Contact.html" class="menu">contacte</a></li>
@@ -57,7 +67,7 @@ $Req_Mess_User_Create = $pdo->prepare('SELECT Nom, Prenom FROM Personne Where Id
     <div class="page">
         <div class="menuDiscussion">
 
-            <h3 class="titreDiscussion">Titre discussion</h3>
+            <h3 class="titreDiscussion"><?php echo $Nom_Topic['NomTopic']; ?></h3>
 
             <?php                                                                                                                                                 //                                            //
             while ($Info_Topic_Mess = $Req_Info_Topic_Mess->fetch()) {                                                                                            //                                            //
@@ -80,10 +90,11 @@ $Req_Mess_User_Create = $pdo->prepare('SELECT Nom, Prenom FROM Personne Where Id
                                                                                                                                      <!--                                 -->
                   <?php echo '<form action="PosteMess.php?IdTopic=', $_GET['IdTopic'], '"  method="post">'; //Afficache des Topics ?><!--                                 -->
                 <!--<form action="PosteMess.php" method="post"> -->                                                                  <!--                                 -->
-                    <div class="floating-label_message">                                                                                                                   <!--                                 -->
-                        <textarea name="Message" class="menuEcriture_message" cols="50" rows="1"></textarea>                                                           <!--                                 -->                                                                                                       <!--        Envoyer un message       -->
-                        <button class="Envoyer_message" type="submit">Envoyer</button>                                                          <!--                                 -->
-                    </div>                                                                                                                     <!--                                 -->
+                                                                                                                                     <!--                                 -->
+                  <textarea name="Message" class="menuEcriture" cols="50" rows="1"></textarea>                                                           <!--                                 -->
+                            <br />                                                                                                       <!--        Envoyer un message       -->
+                  <button class="Envoyer" type="submit">Envoyer</button>                                                          <!--                                 -->
+                                                                                                                                     <!--                                 -->
                 </form>                                                                                                             <!--                                 -->
                                                                                                                                      <!--                                 -->
                 <?php }else {                                                                                                        //                                   //
@@ -95,20 +106,10 @@ $Req_Mess_User_Create = $pdo->prepare('SELECT Nom, Prenom FROM Personne Where Id
         <div class="menuTopic">
             <h2 class="titreTopic2">Listes des participants</h2>
            <ol>
-               <li class="participant1">Participant 1</li>
-               <li class=participant2>Participant 1</li>
-               <li class="participant1">Participant 1</li>
-               <li class=participant2>Participant 1</li>
-               <li class="participant1">Participant 1</li>
-               <li class=participant2>Participant 1</li>
-               <li class="participant1">Participant 1</li>
-               <li class=participant2>Participant 1</li>
-               <li class="participant1">Participant 1</li>
-               <li class=participant2>Participant 1</li>
-               <li class="participant1">Participant 1</li>
-               <li class=participant2>Participant 1</li>
-               <li class="participant1">Participant 1</li>
-               <li class=participant2>Participant 1</li>
+             <?php while ($NbParticipant_Topic = $Req_NbParticipant_Topic->fetch()) {
+               echo '<li class="participant1">', $NbParticipant_Topic['nom'], '-', $NbParticipant_Topic['prenom'], '</li>';
+               //<li class=participant2>Participant 1</li>
+             }?>
            </ol>
         </div>
     </div>

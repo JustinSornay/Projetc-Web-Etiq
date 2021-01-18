@@ -42,7 +42,8 @@ else {
 
 <body>
   <h1>Insertion du message</h1>
-  <p><?php echo $message ;?></p>
-  <meta http-equiv="refresh" content="0; URL=lire_sujet.php?IdTopic=', $Info_Topic['IdTopic'], '">
+  <p><?php echo $message, '</p>
+  <meta http-equiv="refresh" content="0 URL=lire_sujet.php?IdTopic=', $Info_Topic['IdTopic'], '">';
+  ?>
 </body>
 </html>
